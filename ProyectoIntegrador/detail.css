@@ -1,0 +1,104 @@
+body {
+    background-color: gray;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger ;
+    color: honeydew;
+    text-decoration: none;
+}
+
+.hero {
+    width: 80%;
+    margin:auto;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    float: right;
+    display: inline-flex;
+}
+
+header {
+    background-color: dimgrey;
+    margin-top: 30px;
+}
+
+.navbar {
+    margin: 30px auto;
+    display: flex;
+    align-items: right;
+  
+}
+
+ul {
+    flex: 1;
+    text-align: left;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    margin: -5px 25px;
+    border-top: wheat;
+}
+
+ul li a {
+    text-decoration-line: overline ;
+    color: wheat;
+    padding: 0 10px;
+    font-size: 0.8cm;
+
+}
+
+.banner {
+    display: flex;
+    margin-top: 80px;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    background-color: dimgray;
+}
+
+.left-column, .right-column {
+    flex-basis: 50%;
+
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+.right-column img {
+    width: 50%;
+    height: 50%;
+}
+
+h1 {
+    font-size: 1.5cm;
+}
+
+h3 {
+    font-size: 0.8cm;
+    font-family: 'Concert One', cursive;
+}
+
+p ol li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6cm;
+}
+
+.songlist {
+    font-size: 0.6cm;
+    font-family:'Concert One', cursive ;
+}
+
+
+span {
+    text-decoration: underline;
+}

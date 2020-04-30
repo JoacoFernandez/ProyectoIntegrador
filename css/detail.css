@@ -1,77 +1,74 @@
-body {
-    background-color:wheat;
+/*css detalles */
+html, body, .grid-container {
+    height: 100%; margin: 0; }
+
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 150px 100%;
 }
 
-a {
-    margin: 0;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger ;
-    color: honeydew;
-    text-decoration: none;
-}
-
-.hero {
-    width: 80%;
-    margin:auto;
+.top {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 70px 30px;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    float: right;
-    display: inline-flex;
+    background-color: #1E8449;
+    height: 70px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    display: block;
 }
 
-header {
-    background-color: dimgrey;
-    margin-top: 30px;
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-family: 'Allerta Stencil', sans-serif;
 }
 
-.navbar {
-    margin: 30px auto;
-    display: flex;
-    align-items: right;
-  
+.nav {
+    background-color: #229954;
+    height: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
 }
 
-ul {
-    flex: 1;
-    text-align: left;
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
 }
 
-ul li {
-    display: inline-block;
-    list-style: none;
-    margin: -5px 25px;
-    border-top: wheat;
+.nav a:hover {
+    color: black;
 }
 
-ul li a {
-    text-decoration-line: overline ;
-    color: wheat;
-    padding: 0 10px;
-    font-size: 0.8cm;
-
+.playbarra {
+    text-align: center;
+}
+.detbarra {
+    text-align: center;
 }
 
-.banner {
-    display: flex;
-    margin-top: 80px;
-    margin-right: 60px;
-    margin-left: 60px;
-    margin-bottom: 30px;
-    background-color: dimgray;
-}
 
-.left-column, .right-column {
-    flex-basis: 50%;
+.picture { grid-area: picture; 
 
 }
 
 img {
     width: 500px;
     height: 500px;
+    padding: 1cm;
+    margin-left: 2cm;
+    margin-top: 2cm;
 }
 
 .right-column img {

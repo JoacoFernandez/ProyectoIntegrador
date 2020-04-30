@@ -8,14 +8,14 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 100px 100%;
+    grid-template-rows: 150px 100% 70px;
 }
 
 .top {
     width: 100%;
     overflow: hidden;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 70px 30px;
 }
 
 .logo {
@@ -23,6 +23,8 @@ body {
     height: 70px;
     width: 100%;
     float: left;
+    text-align: center;
+    display: block;
 }
 
 .logo a {
@@ -37,7 +39,7 @@ body {
     height: 30px;
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     font-family: 'Oswald', sans-serif;
 }
@@ -58,6 +60,13 @@ body {
 .detbarra {
     text-align: center;
 }
+.nav input[type=text] {
+    float: right;
+    border: none;
+    margin: 5px;
+    font-size: 15px;
+    width: 100%;
+  }
 
 
 .cuerpo {
@@ -68,17 +77,16 @@ body {
 @media screen and (min-width: 768px) {
     .grid-container {
         display: grid;
-        grid-template-rows: 1fr 3fr;
+        grid-template-rows: 200px 100% 80px;
     }
     .top {
-        grid-template-columns:  1fr 1fr;
-        justify-content: space-between;
+        grid-template-columns:  50% 50%;
     }
     .logo {
         margin-left: 80px;
         background-color: #1E8449;
         height: 130px;
-        width: 40%;
+        width: 36%;
         float: left;
         text-align: bottom;
     }
@@ -86,24 +94,43 @@ body {
         width: 60%;
     }
     .nav {
-        margin-left: 30%;
         background-color: #229954;
         height: 50px;
-        width: 70%;
+        width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: space-around;
         font-family: 'Oswald', sans-serif;
     }
     .nav a{
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .footer {
+        grid-template-columns: 40% 60%;
+    }
+    .logodeezer {
+        width: 110px;
+    }
+    .nuestrosnombres {
+        font-size: 13px;
+        float: right;
     }
 }
 @media screen and (min-width: 1024px) {
+    .nav{
+        width: 100%;
+        margin-left: 15px;
+    }
+    .nav a{
+        font-size: 26px;
+    }
     .logo {
         height: 140px;
     }
     .logo a{
         font-size: 60px;
+    }
+    .nuestrosnombres {
+        font-size: 14px;
     }
 }

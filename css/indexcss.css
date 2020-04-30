@@ -8,7 +8,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 150px 100%;
+    grid-template-rows: 150px 100% 70px;
 }
 
 .top {
@@ -39,7 +39,7 @@ body {
     height: 30px;
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     font-family: 'Oswald', sans-serif;
 }
@@ -60,6 +60,13 @@ body {
 .detbarra {
     text-align: center;
 }
+.nav input[type=text] {
+    float: right;
+    border: none;
+    margin: 5px;
+    font-size: 15px;
+    width: 100%;
+  }
 
 
 .cuerpo {
@@ -117,13 +124,17 @@ body {
     background-color: rgba(44, 62, 80, .6);
     margin-left: 7px;
     margin-right: 7px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 10px;
 }
-.artista a{
+.armar{
+    float: left;
+}
+.armar a{
     color: white;
     text-decoration: none;
-    font-size: 20px;
-    text-align: center;
-    display: block;
+    font-size: 25px;
 }
 .canciones {
     background-color: rgba(248, 249, 249, .6);
@@ -137,11 +148,14 @@ body {
     background-color: rgba(44, 62, 80, .6);
     margin-left: 7px;
     margin-right: 7px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 7px;
 }
 .cancion a{
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     display: block;
 }
@@ -157,24 +171,52 @@ body {
     background-color: rgba(44, 62, 80, .6);
     margin-left: 7px;
     margin-right: 7px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
 }
 .album a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     display: block;
+}
+.imagenesartistas {
+    height: 50px;
+    float: right;
+    border-radius: 50%;
+}
+.imagenesalbums-canciones {
+    height: 50px;
+    float: right;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    float: left;
+    width: 100%;
+    background-color: #229954;
+}
+.logodeezer {
+    width: 80px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.nuestrosnombres {
+    float: right;
+    color: white;
+    font-size: 9px;
 }
 
 
 @media screen and (min-width: 768px) {
     .grid-container {
         display: grid;
-        grid-template-rows: 200px 100%;
+        grid-template-rows: 200px 100% 80px;
     }
     .top {
-        grid-template-columns:  1fr 1fr;
-        justify-content: space-between;
+        grid-template-columns:  50% 50%;
     }
     .logo {
         margin-left: 80px;
@@ -188,17 +230,16 @@ body {
         width: 60%;
     }
     .nav {
-        margin-left: 30%;
         background-color: #229954;
         height: 50px;
-        width: 70%;
+        width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: space-around;
         font-family: 'Oswald', sans-serif;
     }
     .nav a{
-        font-size: 25px;
+        font-size: 20px;
     }
     .cuerpo {
         grid-template-rows: 300px 650px;
@@ -225,8 +266,25 @@ body {
     .albumes {
         height: 450px;
     }
+    .footer {
+        grid-template-columns: 40% 60%;
+    }
+    .logodeezer {
+        width: 110px;
+    }
+    .nuestrosnombres {
+        font-size: 13px;
+        float: right;
+    }
 }
 @media screen and (min-width: 1024px) {
+    .nav{
+        width: 100%;
+        margin-left: 15px;
+    }
+    .nav a{
+        font-size: 26px;
+    }
     .logo {
         height: 140px;
     }
@@ -241,5 +299,8 @@ body {
     }
     .albumes {
         height: 500px;
+    }
+    .nuestrosnombres {
+        font-size: 14px;
     }
 }

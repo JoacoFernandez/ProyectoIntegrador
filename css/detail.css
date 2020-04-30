@@ -3,23 +3,61 @@ html, body, .grid-container {
     height: 100%; margin: 0; }
 
 
-
-
-
-
 .grid-container {
-  display: grid;
-  grid-template-columns: 1.4fr 1.1fr 0.5fr;
-  grid-template-rows: 1.6fr 0.4fr;
-  gap: 1px 1px;
-  grid-template-areas: "picture infor more" ". . .";
-  background-color: darkseagreen;
-  
+    display: grid;
+    grid-template-rows: 150px 100%;
 }
 
-header {
-    background-color: dimgray;
+.top {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 70px 30px;
 }
+
+.logo {
+    background-color: #1E8449;
+    height: 70px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    display: block;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.nav {
+    background-color: #229954;
+    height: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+.playbarra {
+    text-align: center;
+}
+.detbarra {
+    text-align: center;
+}
+
 
 .picture { grid-area: picture; 
 
@@ -33,6 +71,31 @@ img {
     margin-top: 2cm;
 }
 
-.infor { 
-grid-area: infor; 
-background-color: darkslategray;}
+.right-column img {
+    width: 50%;
+    height: 50%;
+}
+
+h1 {
+    font-size: 1.5cm;
+}
+
+h3 {
+    font-size: 0.8cm;
+    font-family: 'Concert One', cursive;
+}
+
+p ol li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6cm;
+}
+
+.songlist {
+    font-size: 0.6cm;
+    font-family:'Concert One', cursive ;
+}
+
+
+span {
+    text-decoration: underline;
+}

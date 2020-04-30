@@ -1,0 +1,222 @@
+body {
+    margin: 0px;
+    background-image: url(../img/fondogeneros.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 150px 1450px 70px;
+    height: 1670px;
+}
+
+.top {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 70px 30px;
+}
+
+.logo {
+    background-color: #1E8449;
+    height: 70px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    display: block;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.nav {
+    background-color: #229954;
+    height: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+.playbarra {
+    text-align: center;
+}
+.detbarra {
+    text-align: center;
+}
+.nav input[type=text] {
+    float: right;
+    border: none;
+    margin: 5px;
+    font-size: 15px;
+    width: 100%;
+}
+.cuerpo {
+    display: grid;
+    grid-template-rows: 200px 600px;
+}
+.frase {
+    color: white;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+}
+.todosgeneros {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.primeros10 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.segundos10 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.generos{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: rgba(44, 62, 80, .85);
+}
+.imagenes {
+    height: 50px;
+    float: right;
+}
+.losgeneros a{
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+}
+.losgeneros a:hover{
+    color: black;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    background-color: #229954;
+    float: right;
+}
+.logodeezer {
+    width: 80px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.nuestrosnombres {
+    float: right;
+    color: white;
+    font-size: 9px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-rows: 200px 1050px 80px;
+        height: 1130px;
+    }
+    .top {
+        grid-template-columns:  50% 50%;
+    }
+    .logo {
+        margin-left: 80px;
+        background-color: #1E8449;
+        height: 130px;
+        width: 36%;
+        float: left;
+        text-align: bottom;
+    }
+    .logo a{
+        width: 60%;
+    }
+    .nav {
+        background-color: #229954;
+        height: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-around;
+        font-family: 'Oswald', sans-serif;
+    }
+    .nav a{
+        font-size: 20px;
+    }
+    .todosgeneros {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .generos {
+        height: 70px;
+    }
+    .losgeneros a{
+        font-size: 37px;
+    }
+    .footer {
+        grid-template-columns: 40% 60%;
+    }
+    .logodeezer {
+        width: 110px;
+    }
+    .nuestrosnombres {
+        font-size: 13px;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid-container{
+        grid-template-rows: 200px 1200px 80px;
+    }
+    .nav{
+        width: 100%;
+        margin-left: 15px;
+    }
+    .nav a{
+        font-size: 26px;
+    }
+    .logo {
+        height: 140px;
+    }
+    .logo a{
+        font-size: 60px;
+    }
+    .frase {
+        font-size: 25px;
+    }
+    .generos{
+        height: 80px;
+    }
+    .losgeneros a{
+        font-size: 45px;
+    }
+    .nuestrosnombres {
+        font-size: 14px;
+    }
+}

@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-image: url(https://as2.ftcdn.net/jpg/02/41/71/81/500_F_241718134_4Bw1U1ig8Ib8KK0nmdTptv2C1S4U9kD3.jpg);
+    background-image: url(../img/fondoindex.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -23,6 +23,8 @@ body {
     height: 70px;
     width: 100%;
     float: left;
+    text-align: center;
+    display: block;
 }
 
 .logo a {
@@ -62,32 +64,36 @@ body {
 
 .cuerpo {
     display: grid;
-    grid-template-rows: 200px 100%;
+    grid-template-rows: 200px 80% 20%;
+    margin-top: 0px;
 }
 
 .frase {
     color: white;
     text-align: center;
     font-family: 'Playfair Display', serif;
+    font-size: 20px;
 }
 
 .charts-container {
     display: grid;
-    grid-template-rows: 70px 3fr;
+    grid-template-rows: 80px 2fr;
     margin-top: 100px;
 }
 
 .titulo {
     color: white;
     text-align: center;
+    font-size: 20px;
 }
 
 .charts {
     display: grid;
-    grid-template-rows: 1fr 1fr 1 fr;
+    grid-template-rows: 1fr 1fr 1fr;
     margin-right: 20px;
     margin-left: 20px;
     gap: 10px;
+    height: 1300px;
 }
 .presentacion {
     background-color: rgba(44, 62, 80, .6);
@@ -104,6 +110,7 @@ body {
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
     gap: 7px;
     padding-bottom: 7px;
+    height: 400px;
 }
 
 .artista {
@@ -124,6 +131,7 @@ body {
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
     gap: 7px;
     padding-bottom: 7px;
+    height: 400px;
 }
 .cancion {
     background-color: rgba(44, 62, 80, .6);
@@ -143,6 +151,7 @@ body {
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
     gap: 7px;
     padding-bottom: 7px;
+    height: 400px;
 }
 .album {
     background-color: rgba(44, 62, 80, .6);
@@ -161,7 +170,7 @@ body {
 @media screen and (min-width: 768px) {
     .grid-container {
         display: grid;
-        grid-template-rows: 1fr 3fr;
+        grid-template-rows: 200px 100%;
     }
     .top {
         grid-template-columns:  1fr 1fr;
@@ -191,8 +200,30 @@ body {
     .nav a{
         font-size: 25px;
     }
+    .cuerpo {
+        grid-template-rows: 300px 650px;
+    }
+    .frase {
+        font-size: 30px;
+    }
+    .charts-container {
+        grid-template-rows: 150px 500px;
+    }
+    .titulo {
+        font-size: 40px;
+    }
     .charts {
         grid-template-columns: 1fr 1fr 1fr;
+        height: 500px;
+    }
+    .artistas {
+        height: 450px;
+    }
+    .canciones {
+        height: 450px;
+    }
+    .albumes {
+        height: 450px;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -201,5 +232,14 @@ body {
     }
     .logo a{
         font-size: 60px;
+    }
+    .artistas {
+        height: 500px;
+    }
+    .canciones {
+        height: 500px;
+    }
+    .albumes {
+        height: 500px;
     }
 }

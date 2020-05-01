@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-image: url(https://as2.ftcdn.net/jpg/02/41/71/81/500_F_241718134_4Bw1U1ig8Ib8KK0nmdTptv2C1S4U9kD3.jpg);
+    background-image: url(../img/fondodetail.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -8,7 +8,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 150px 100% 70px;
+    grid-template-rows: 150px 1750px 70px;
 }
 
 .top {
@@ -67,9 +67,82 @@ body {
     font-size: 15px;
     width: 100%;
 }
-
-
-.playlist-container {
+.cuerpo{
+    display: grid;
+    grid-template-rows: 150px 1600px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.title{
+    text-align: center;
+    background-color: rgba(44, 62,80,.6);
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.informacion {
+    display: grid;
+    grid-template-rows: 400px 700px;
+    gap: 20px;
+}
+.foto-album{
+    height: 390px;
+}
+.general{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 12fr;
+    gap: 10px;
+}
+.artista{
+    background-color: rgba(44, 62,80,.6);
+}
+.artista a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+.genero{
+    background-color: rgba(44, 62,80,.6);
+}
+.genero a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+.fechaestreno{
+    background-color: rgba(44, 62,80,.6);
+    color: white;
+}
+.duracion{
+    background-color: rgba(44, 62,80,.6);
+    color: white;
+}
+.introcanciones {
+    background-color: rgba(44, 62,80,.6);
+    color: white;
+}
+.contenedor-canciones{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.primeras{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.segundas{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.cancionsola{
+    background-color: rgba(44, 62,80,.6);
+}
+.cancionsola a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
 }
 .footer {
     display: grid;
@@ -93,7 +166,7 @@ body {
 @media screen and (min-width: 768px) {
     .grid-container {
         display: grid;
-        grid-template-rows: 200px 100% 80px;
+        grid-template-rows: 200px 1700px 80px;
     }
     .top {
         grid-template-columns:  50% 50%;
@@ -121,6 +194,13 @@ body {
     .nav a{
         font-size: 20px;
     }
+    .cuerpo{
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    .foto-album {
+        padding-left: 70px;
+    }
     .footer {
         grid-template-columns: 40% 60%;
     }
@@ -145,6 +225,13 @@ body {
     }
     .logo a{
         font-size: 60px;
+    }
+    .cuerpo{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .foto-album {
+        padding-left: 160px;
     }
     .nuestrosnombres {
         font-size: 14px;

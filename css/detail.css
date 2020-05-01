@@ -1,11 +1,17 @@
 /*css detalles */
-html, body, .grid-container {
-    height: 100%; margin: 0; }
+body {
+    margin: 0px;
+    background-image: url(../img/fondodetail.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 
 
-.grid-container {
+
+.grid-detail {
     display: grid;
     grid-template-rows: 150px 100%;
+}
 }
 
 .top {
@@ -58,44 +64,92 @@ html, body, .grid-container {
     text-align: center;
 }
 
+.title {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(44, 62,80,.6);
+}
 
-.picture { grid-area: picture; 
+.charts-container {
+padding: 7px;
+}
 
+.information {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    gap: 10px;
+    height: 1300px;
+    padding-bottom: 7px;
 }
 
 img {
-    width: 500px;
-    height: 500px;
-    padding: 1cm;
-    margin-left: 2cm;
-    margin-top: 2cm;
+    height: 460px;
+    width: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-.right-column img {
-    width: 50%;
-    height: 50%;
-}
+.generod {
+    height: 90px;
+    background-color: rgba(44, 62, 80, .6);
+    color: white;
+    text-align: center;
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-top: 9px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    gap: 15px;
 
-h1 {
-    font-size: 1.5cm;
 }
 
 h3 {
-    font-size: 0.8cm;
-    font-family: 'Concert One', cursive;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 10px;
+    font-weight: bold;
 }
 
-p ol li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.6cm;
+.topdetails {
+    gap: 15px;
+    height: 90px;
+    background-color: rgba(44, 62, 80, .6);
+    color: white;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 50px;
+    font-size: 20px;
 }
 
-.songlist {
-    font-size: 0.6cm;
-    font-family:'Concert One', cursive ;
+.cinco {
+    height: 305px;
+    background-color: rgba(44, 62, 80, .6);
+    color: white;
+    text-align: center;
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    gap: 5px;
+}
+
+.cancion {
+    background-color: rgba(44, 62, 80, .6);
+    margin-top: 10px;
+    margin-left: 7px;
+    margin-right: 7px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 30px;
+    padding: 10px;
 }
 
 
-span {
-    text-decoration: underline;
-}

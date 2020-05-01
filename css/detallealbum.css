@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+    background-image: url(https://as2.ftcdn.net/jpg/02/41/71/81/500_F_241718134_4Bw1U1ig8Ib8KK0nmdTptv2C1S4U9kD3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 150px 100% 70px;
+}
+
+.top {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 70px 30px;
+}
+
+.logo {
+    background-color: #1E8449;
+    height: 70px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    display: block;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.nav {
+    background-color: #229954;
+    height: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+.playbarra {
+    text-align: center;
+}
+.detbarra {
+    text-align: center;
+}
+.nav input[type=text] {
+    float: right;
+    border: none;
+    margin: 5px;
+    font-size: 15px;
+    width: 100%;
+}
+
+
+.playlist-container {
+}
+.footer {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    float: left;
+    width: 100%;
+    background-color: #229954;
+}
+.logodeezer {
+    width: 80px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.nuestrosnombres {
+    float: right;
+    color: white;
+    font-size: 9px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-rows: 200px 100% 80px;
+    }
+    .top {
+        grid-template-columns:  50% 50%;
+    }
+    .logo {
+        margin-left: 80px;
+        background-color: #1E8449;
+        height: 130px;
+        width: 36%;
+        float: left;
+        text-align: bottom;
+    }
+    .logo a{
+        width: 60%;
+    }
+    .nav {
+        background-color: #229954;
+        height: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-around;
+        font-family: 'Oswald', sans-serif;
+    }
+    .nav a{
+        font-size: 20px;
+    }
+    .footer {
+        grid-template-columns: 40% 60%;
+    }
+    .logodeezer {
+        width: 110px;
+    }
+    .nuestrosnombres {
+        font-size: 13px;
+        float: right;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .nav{
+        width: 100%;
+        margin-left: 15px;
+    }
+    .nav a{
+        font-size: 26px;
+    }
+    .logo {
+        height: 140px;
+    }
+    .logo a{
+        font-size: 60px;
+    }
+    .nuestrosnombres {
+        font-size: 14px;
+    }
+}

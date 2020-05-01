@@ -165,6 +165,24 @@ body {
     text-align: center;
     display: block;
 }
+.footer {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    background-color: #229954;
+    float: right;
+}
+.logodeezer {
+    width: 80px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.nuestrosnombres {
+    float: right;
+    color: white;
+    font-size: 9px;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -225,6 +243,16 @@ body {
     .albumes {
         height: 450px;
     }
+    .footer {
+        grid-template-columns: 40% 60%;
+    }
+    .logodeezer {
+        width: 110px;
+    }
+    .nuestrosnombres {
+        font-size: 13px;
+        float: right;
+    }
 }
 @media screen and (min-width: 1024px) {
     .logo {
@@ -241,5 +269,8 @@ body {
     }
     .albumes {
         height: 500px;
+    }
+    .nuestrosnombres {
+        font-size: 14px;
     }
 }

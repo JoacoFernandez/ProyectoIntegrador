@@ -8,7 +8,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 150px 100% 70px;
+    grid-template-rows: 150px 900px 70px;
 }
 
 .top {
@@ -67,9 +67,70 @@ body {
     font-size: 15px;
     width: 100%;
 }
-
-
-.playlist-container {
+.cuerpo{
+    display: grid;
+    grid-template-rows: 150px 650px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.title{
+    text-align: center;
+    background-color: rgba(44, 62,80,.6);
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.informacion {
+    display: grid;
+    grid-template-rows: 300px 350px;
+    gap: 20px;
+}
+.foto-cancion{
+    height: 250px;
+}
+.general{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.artista{
+    background-color: rgba(44, 62,80,.6);
+}
+.artista a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+.album{
+    background-color: rgba(44, 62,80,.6);
+}
+.album a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+.genero{
+    background-color: rgba(44, 62,80,.6);
+}
+.genero a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+.fechaestreno{
+    background-color: rgba(44, 62,80,.6);
+    color: white;
+}
+.duracion{
+    background-color: rgba(44, 62,80,.6);
+    color: white;
+}
+.add{
+    background-color: rgba(44, 62,80,.6);
+}
+.boton {
+    width: 100%;
 }
 .footer {
     display: grid;
@@ -93,7 +154,7 @@ body {
 @media screen and (min-width: 768px) {
     .grid-container {
         display: grid;
-        grid-template-rows: 200px 100% 80px;
+        grid-template-rows: 200px 1000px 80px;
     }
     .top {
         grid-template-columns:  50% 50%;
@@ -121,6 +182,14 @@ body {
     .nav a{
         font-size: 20px;
     }
+    .cuerpo{
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    .foto-cancion {
+        height: 350px;
+        padding-left: 90px;
+    }
     .footer {
         grid-template-columns: 40% 60%;
     }
@@ -145,6 +214,13 @@ body {
     }
     .logo a{
         font-size: 60px;
+    }
+    .cuerpo{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .foto-cancion {
+        padding-left: 230px;
     }
     .nuestrosnombres {
         font-size: 14px;

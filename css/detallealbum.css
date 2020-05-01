@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-image: url(../img/fondodetgeneros.jpg);
+    background-image: url(https://as2.ftcdn.net/jpg/02/41/71/81/500_F_241718134_4Bw1U1ig8Ib8KK0nmdTptv2C1S4U9kD3.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -8,7 +8,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 150px 1650px 70px;
+    grid-template-rows: 150px 100% 70px;
 }
 
 .top {
@@ -67,84 +67,9 @@ body {
     font-size: 15px;
     width: 100%;
 }
+
+
 .playlist-container {
-    display: grid;
-    grid-template-rows: 150px 1450px;
-    margin-bottom: 20px;
-}
-.frase {
-    text-align: center;
-    font-size: 30px;
-    color: white;
-}
-.lista-reproduccion {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-left: 20px;
-    margin-right: 20px;
-    gap: 15px;
-}
-.datos-track {
-    display: grid;
-    grid-template-columns: 1% 99%;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: rgba(248, 249, 249, .7);
-}
-.imagen-artista {
-    height: 0px;
-}
-.cancion {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-.presentacion-cancion {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.titulo {
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.titulo a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-.titulo a:hover{
-    text-decoration: underline;
-}
-.artista {
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.artista a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-.artista a:hover{
-    text-decoration: underline;
-}
-.album a{
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
-}
-.album a:hover{
-    text-decoration: underline;
-}
-.audio {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-.audio-cancion {
-    float: left;
-}
-.boton-eliminar {
-    text-align: center;
 }
 .footer {
     display: grid;
@@ -168,7 +93,7 @@ body {
 @media screen and (min-width: 768px) {
     .grid-container {
         display: grid;
-        grid-template-rows: 200px 1700px 80px;
+        grid-template-rows: 200px 100% 80px;
     }
     .top {
         grid-template-columns:  50% 50%;
@@ -195,24 +120,6 @@ body {
     }
     .nav a{
         font-size: 20px;
-    }
-    .datos-track {
-        display: grid;
-        grid-template-columns: 20% 80%;
-        gap: 10px;
-    }
-    .imagen-artista {
-        padding-top: 10px;
-        height: 100px;
-    }
-    .titulo a{
-        font-size: 25px;
-    }
-    .artista a{
-        font-size: 25px;
-    }
-    .album a{
-        font-size: 25px;
     }
     .footer {
         grid-template-columns: 40% 60%;

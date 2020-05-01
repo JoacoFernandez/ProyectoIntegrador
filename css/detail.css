@@ -5,13 +5,12 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
-
+}
 
 
 .grid-detail {
     display: grid;
     grid-template-rows: 150px 100%;
-}
 }
 
 .top {
@@ -42,7 +41,7 @@ body {
     height: 30px;
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     font-family: 'Oswald', sans-serif;
 }
@@ -63,6 +62,12 @@ body {
 .detbarra {
     text-align: center;
 }
+.nav input[type=text] {
+    float: right;
+    border: none;
+    margin: 5px;
+    font-size: 15px;
+    width: 100%;}
 
 .title {
     color: white;
@@ -173,6 +178,67 @@ h3 {
    
 }
 
+
+@media screen and (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-rows: 200px 100% 80px;
+    }
+    .top {
+        grid-template-columns:  50% 50%;
+    }
+    .logo {
+        margin-left: 80px;
+        background-color: #1E8449;
+        height: 130px;
+        width: 36%;
+        float: left;
+        text-align: bottom;
+    }
+    .logo a{
+        width: 60%;
+    }
+    .nav {
+        background-color: #229954;
+        height: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-around;
+        font-family: 'Oswald', sans-serif;
+    }
+    .nav a{
+        font-size: 20px;
+    }
+    .footer {
+        grid-template-columns: 40% 60%;
+    }
+    .logodeezer {
+        width: 110px;
+    }
+    .nuestrosnombres {
+        font-size: 13px;
+        float: right;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .nav{
+        width: 100%;
+        margin-left: 15px;
+    }
+    .nav a{
+        font-size: 26px;
+    }
+    .logo {
+        height: 140px;
+    }
+    .logo a{
+        font-size: 60px;
+    }
+    .nuestrosnombres {
+        font-size: 14px;
+    }
+}
 
 
 

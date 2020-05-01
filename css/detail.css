@@ -90,6 +90,7 @@ padding: 7px;
     padding-bottom: 7px;
 }
 
+
 img {
     height: 460px;
     width: 450px;
@@ -158,7 +159,6 @@ a {
     color: white;
     text-decoration: none;
 }
-)
 
 .seguidoress {
     height: 40px;
@@ -226,6 +226,20 @@ a {
         font-size: 20px;
     }
 
+    .fotoartista {
+        margin-left: auto;
+        margin-right: auto;
+       display: block;
+    }
+
+    .generod {
+        grid-template-columns: 40% 60% ;
+    }
+
+    img {
+        justify-content: space-between;
+        align-self: center
+    }
     
     .footer {
         grid-template-columns: 40% 60%;

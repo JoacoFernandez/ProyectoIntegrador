@@ -80,7 +80,7 @@ body {
     font-size: 20px;
     margin-bottom: 40px;
 }
-.informacion {
+.information {
     display: grid;
     grid-template-rows: 300px 350px;
     gap: 20px;
@@ -100,7 +100,7 @@ body {
 .artista a{
     text-decoration: none;
     color: white;
-    font-size: 35px;
+    font-size: 25px;
 }
 .album{
     background-color: rgba(44, 62,80,.6);
@@ -108,7 +108,7 @@ body {
 .album a{
     text-decoration: none;
     color: white;
-    font-size: 35px;
+    font-size: 25px;
 }
 .genero{
     background-color: rgba(44, 62,80,.6);
@@ -116,7 +116,7 @@ body {
 .genero a{
     text-decoration: none;
     color: white;
-    font-size: 35px;
+    font-size: 25px;
 }
 .fechaestreno{
     background-color: rgba(44, 62,80,.6);
@@ -185,6 +185,11 @@ body {
     .cuerpo{
         margin-left: 120px;
         margin-right: 120px;
+    }
+    .information {
+        display: grid;
+        grid-template-rows: 400px 400px;
+        gap: 20px;
     }
     .foto-cancion {
         height: 350px;

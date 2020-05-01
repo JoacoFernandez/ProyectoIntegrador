@@ -9,7 +9,7 @@ body {
 
 .grid-detail {
     display: grid;
-    grid-template-rows: 150px 100%;
+    grid-template-rows: 150px 900px 70px;
 }
 
 .top {
@@ -68,122 +68,80 @@ body {
     font-size: 15px;
     width: 100%;}
 
-.title {
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    background-color: rgba(44, 62,80,.6);
-}
 
 .charts-container {
-padding: 7px;
-}
-
-.information {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-top: 30px;
+    grid-template-rows: 150px 700px;
     margin-right: 20px;
     margin-left: 20px;
-    gap: 10px;
-    height: 1300px;
-    padding-bottom: 7px;
 }
 
+.title{
+    text-align: center;
+    background-color: rgba(44, 62,80,.6);
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.information {
+    display: grid;
+    grid-template-rows: 300px 400px;
+    gap: 20px;
+}
 
 img {
-    height: 460px;
-    width: 450px;
-    margin-left: 15px;
-    margin-right: 15px;
+    height: 250px;
 }
 
-.generod {
-    height: 90px;
-    background-color: rgba(44, 62, 80, .6);
-    color: white;
-    text-align: center;
-    margin-right: 7px;
-    margin-left: 7px;
-    margin-top: 9px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    gap: 15px;
-
-}
-
-h3 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 1em;
-    margin-block-end: 2em;
-    margin-inline-start: 0px;
-    margin-inline-end: 10px;
-    font-weight: bold;
-}
-
-.topdetails {
+.general{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
     gap: 10px;
-    height: 90px;
-    background-color: rgba(44, 62, 80, .6);
-    color: white;
-    text-align: center;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-top: 50px;
-    font-size: 20px;
+    margin-bottom: 10px;
 }
-
-.cinco {
-    height: 305px;
+.seguidores{
+    color: white;
+    background-color: rgba(44, 62, 80, .6);
+    font-size: 13px;
+}
+.generod {
+    background-color: rgba(44, 62, 80, .6);
+}
+.generod a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.topdetails {
     background-color: rgba(44, 62, 80, .6);
     color: white;
-    margin-bottom: 20px;
-    align-items: initial;
-    font-size: 20px;
-    gap: 5px;
+    font-size: 15px;
+}
+.cinco {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
 
 .cancion {
-    margin-top: 15px;
-    display: grid;
-    color: white;
     background-color: rgba(44, 62, 80, .6);
-    gap: 15px;
-    padding: 15px;
-    justify-content: flex-start;
-  
 }
 
-a {
+.cancion a {
     color: white;
     text-decoration: none;
-}
-
-.seguidoress {
-    height: 40px;
-    margin-top: 25px;
-    display: grid;
-    color: white;
-    background-color: rgba(44, 62, 80, .6);
-    gap: 15px;
-    padding: 15px;
-    justify-content: flex-start;
-
+    font-size: 15px;
 }
 
 .footer {
-    
     display: grid;
-    height: 30px;
     grid-template-columns: 30% 70%;
+    float: left;
     width: 100%;
-
     background-color: #229954;
 }
 .logodeezer {
-    display: block;
-    width: 80px;
+    height: 40px;
     padding-top: 15px;
     padding-left: 10px;
 }
@@ -197,7 +155,7 @@ a {
 @media screen and (min-width: 768px) {
     .grid-container {
         display: grid;
-        grid-template-rows: 200px 100% 80px;
+        grid-template-rows: 200px 1100px 80px;
     }
     .top {
         grid-template-columns:  50% 50%;
@@ -225,11 +183,12 @@ a {
     .nav a{
         font-size: 20px;
     }
-
-    .fotoartista {
-        margin-left: auto;
-        margin-right: auto;
-       display: block;
+    .charts-container{
+        margin-right: 120px;
+        margin-left: 120px;
+    }
+    .img {
+        height: 300px;
     }
 
     .generod {
@@ -265,6 +224,10 @@ a {
     }
     .logo a{
         font-size: 60px;
+    }
+    .charts-container{
+        margin-left: 150px;
+        margin-right: 150px;
     }
     .nuestrosnombres {
         font-size: 14px;

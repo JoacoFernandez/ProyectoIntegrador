@@ -8,7 +8,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 150px 1250px 70px;
+    grid-template-rows: 150px 1450px 70px;
 }
 
 .top {
@@ -69,7 +69,7 @@ body {
 }
 .cuerpo{
     display: grid;
-    grid-template-rows: 150px 1000px;
+    grid-template-rows: 150px 1200px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -80,9 +80,9 @@ body {
     font-size: 20px;
     margin-bottom: 40px;
 }
-.informacion {
+.information {
     display: grid;
-    grid-template-rows: 300px 200px 500px;
+    grid-template-rows: 300px 400px 500px;
     gap: 20px;
 }
 .foto-album{
@@ -167,7 +167,7 @@ body {
 @media screen and (min-width: 768px) {
     .grid-container {
         display: grid;
-        grid-template-rows: 200px 1500px 80px;
+        grid-template-rows: 200px 1600px 80px;
     }
     .top {
         grid-template-columns:  50% 50%;
@@ -198,6 +198,11 @@ body {
     .cuerpo{
         margin-left: 120px;
         margin-right: 120px;
+    }
+    .information {
+        display: grid;
+        grid-template-rows: 350px 450px 500px;
+        gap: 20px;
     }
     .foto-album {
         height: 350px;

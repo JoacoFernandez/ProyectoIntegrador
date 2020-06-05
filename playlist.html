@@ -5,313 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playlist</title>
     <link rel="stylesheet" href="css/playlist.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="grid-container">
-
-        <div class="top">
-            <div class="logo">
-                <a href="index.html">RIM-BA</a>
-            </div>
-            <div class="nav">
-                <div class="playbarra"><a href="playlist.html">PLAYLIST</a></div>
-                <div class="detbarra"><a href="generos.html">GENEROS</a></div>
-                <input type="text" placeholder="Search..">
-            </div>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">Rim-ba</a>
         </div>
-
-        <div class="playlist-container">
-            <div class="frase">
-                <h2>Mi Playlist</h2>
-            </div>
-            <div class="explicacion">
-                <div>
-                    <p class="guiar">Cancion</p>
-                </div>
-                <div>
-                    <p class="guiar">Artista</p>
-                </div>
-                <div>
-                    <p class="guiar">Album</p>
-                </div>
-            </div>
-            <div class="lista-reproduccion">
-                <div class="datos-track">
-                    <div class="foto-artista">
-                        <img src="img/dababy.JPG" alt="" class="imagen-artista">
-                    </div>
-                    <div class="cancion">
-                        <div class="presentacion-cancion">
-                            <div class="titulo">
-                                <a href="detallecancion.html">ROCKSTAR</a>
-                            </div>
-                            <div class="artista">
-                                <a href="detail.html">DaBaby</a>
-                            </div>
-                            <div class="album">
-                                <a href="detallealbum.html">Blame It on Baby</a>
-                            </div>
-                        </div>
-                        <div class="audio">
-                            <div class="audio-cancion">
-                                <audio src="audios/dababy-rockstar-ft-roddy-ricch-audio.mp3" controls></audio>
-                            </div>
-                            <div class="eliminar">
-                                <button class="boton-eliminar">Eliminar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="datos-track">
-                    <div class="foto-artista">
-                        <img src="img/myturn.JPG" alt="" class="imagen-artista">
-                    </div>
-                    <div class="cancion">
-                        <div class="presentacion-cancion">
-                            <div class="titulo">
-                                <a href="detallecancion.html">Emotionally Scarred</a>
-                            </div>
-                            <div class="artista">
-                                <a href="detail.html">LilBaby</a>
-                            </div>
-                            <div class="album">
-                                <a href="detallealbum.html">MY TURN</a>
-                            </div>
-                        </div>
-                        <div class="audio">
-                            <div class="audio-cancion">
-                                <audio src="audios/lil-baby-emotionally-scarred-official-audio.mp3" controls></audio>
-                            </div>
-                            <div class="eliminar">
-                                <button class="boton-eliminar">Eliminar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="datos-track">
-                    <div class="foto-artista">
-                        <img src="img/postmalone.JPG" alt="" class="imagen-artista">
-                    </div>
-                    <div class="cancion">
-                        <div class="presentacion-cancion">
-                            <div class="titulo">
-                                <a href="detallecancion.html">Hollywood's Bleeding</a>
-                            </div>
-                            <div class="artista">
-                                <a href="detail.html">Post Malone</a>
-                            </div>
-                            <div class="album">
-                                <a href="detallealbum.html">Hollywood's Bleeding</a>
-                            </div>
-                        </div>
-                        <div class="audio">
-                            <div class="audio-cancion">
-                                <audio src="audios/post-malone-hollywoods-bleeding-audio.mp3" controls></audio>
-                            </div>
-                            <div class="eliminar">
-                                <button class="boton-eliminar">Eliminar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="datos-track">
-                    <div class="foto-artista">
-                        <img src="img/thebox.JPG" alt="" class="imagen-artista">
-                    </div>
-                    <div class="cancion">
-                        <div class="presentacion-cancion">
-                            <div class="titulo">
-                                <a href="detallecancion.html">The Box</a>
-                            </div>
-                            <div class="artista">
-                                <a href="detail.html">Roddy Ricch</a>
-                            </div>
-                            <div class="album">
-                                <a href="detallealbum.html">Please Excuse Me for Being Antisocial</a>
-                            </div>
-                        </div>
-                        <div class="audio">
-                            <div class="audio-cancion">
-                                <audio src="audios/roddy-ricch-the-box-official-audio.mp3" controls></audio>
-                            </div>
-                            <div class="eliminar">
-                                <button class="boton-eliminar">Eliminar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="datos-track">
-                    <div class="foto-artista">
-                        <img src="img/theweeknd.JPG" alt="" class="imagen-artista">
-                    </div>
-                    <div class="cancion">
-                        <div class="presentacion-cancion">
-                            <div class="titulo">
-                                <a href="detallecancion.html">Blinding Lights</a>
-                            </div>
-                            <div class="artista">
-                                <a href="detail.html">The Weeknd</a>
-                            </div>
-                            <div class="album">
-                                <a href="detallealbum.html">After Hours</a>
-                            </div>
-                        </div>
-                        <div class="audio">
-                            <div class="audio-cancion">
-                                <audio src="audios/the-weeknd-blinding-lights-official-audio.mp3" controls></audio>
-                            </div>
-                            <div class="eliminar">
-                                <button class="boton-eliminar">Eliminar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="datos-track">
-                    <div class="foto-artista">
-                        <img src="img/billieeilish.JPG" alt="" class="imagen-artista">
-                    </div>
-                    <div class="cancion">
-                        <div class="presentacion-cancion">
-                            <div class="titulo">
-                                <a href="detallecancion.html">Bad Guy</a>
-                            </div>
-                            <div class="artista">
-                                <a href="detail.html">Billie Eilish</a>
-                            </div>
-                            <div class="album">
-                                <a href="detallealbum.html">When We All Fall Asleep, Where Do We Go?</a>
-                            </div>
-                        </div>
-                        <div class="audio">
-                            <div class="audio-cancion">
-                                <audio src="audios/billie-eilish-bad-guy.mp3" controls></audio>
-                            </div>
-                            <div class="eliminar">
-                                <button class="boton-eliminar">Eliminar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="datos-track">
-                    <div class="foto-artista">
-                        <img src="img/dababy.JPG" alt="" class="imagen-artista">
-                    </div>
-                    <div class="cancion">
-                        <div class="presentacion-cancion">
-                            <div class="titulo">
-                                <a href="detallecancion.html">Pick Up</a>
-                            </div>
-                            <div class="artista">
-                                <a href="detail.html">DaBaby</a>
-                            </div>
-                            <div class="album">
-                                <a href="detallealbum.html">Blame It On Baby</a>
-                            </div>
-                        </div>
-                        <div class="audio">
-                            <div class="audio-cancion">
-                                <audio src="audios/dababy-pick-up-ft-quavo-audio.mp3" controls></audio>
-                            </div>
-                            <div class="eliminar">
-                                <button class="boton-eliminar">Eliminar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="datos-track">
-                    <div class="foto-artista">
-                        <img src="img/justinbieber.JPG" alt="" class="imagen-artista">
-                    </div>
-                    <div class="cancion">
-                        <div class="presentacion-cancion">
-                            <div class="titulo">
-                                <a href="detallecancion.html">No Sense</a>
-                            </div>
-                            <div class="artista">
-                                <a href="detail.html">Justin Bieber</a>
-                            </div>
-                            <div class="album">
-                                <a href="detallealbum.html">Purpose</a>
-                            </div>
-                        </div>
-                        <div class="audio">
-                            <div class="audio-cancion">
-                                <audio src="audios/justin-bieber-no-sense-audio-only-ft-travis-scott.mp3" controls></audio>
-                            </div>
-                            <div class="eliminar">
-                                <button class="boton-eliminar">Eliminar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="datos-track">
-                    <div class="foto-artista">
-                        <img src="img/theweeknd.JPG" alt="" class="imagen-artista">
-                    </div>
-                    <div class="cancion">
-                        <div class="presentacion-cancion">
-                            <div class="titulo">
-                                <a href="detallecancion.html">Escape From LA</a>
-                            </div>
-                            <div class="artista">
-                                <a href="detail.html">The Weeknd</a>
-                            </div>
-                            <div class="album">
-                                <a href="detallealbum.html">After Hours</a>
-                            </div>
-                        </div>
-                        <div class="audio">
-                            <div class="audio-cancion">
-                                <audio src="audios/the-weeknd-escape-from-la-audio.mp3" controls></audio>
-                            </div>
-                            <div class="eliminar">
-                                <button class="boton-eliminar">Eliminar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="datos-track">
-                    <div class="foto-artista">
-                        <img src="img/myturn.JPG" alt="" class="imagen-artista">
-                    </div>
-                    <div class="cancion">
-                        <div class="presentacion-cancion">
-                            <div class="titulo">
-                                <a href="detallecancion.html">Commercial</a>
-                            </div>
-                            <div class="artista">
-                                <a href="detail.html">LilBaby</a>
-                            </div>
-                            <div class="album">
-                                <a href="detallealbum.html">My Turn</a>
-                            </div>
-                        </div>
-                        <div class="audio">
-                            <div class="audio-cancion">
-                                <audio src="audios/lil-baby-feat-lil-uzi-vert-commercial-official-audio.mp3" controls></audio>
-                            </div>
-                            <div class="eliminar">
-                                <button class="boton-eliminar">Eliminar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="deezer">
-                <img class ="logodeezer" src="img/deezer-logo.jpg" alt="logodeezer">
-            </div>
-            <div class="nuestrosnombres">
-                <h2>Kiara Anderson, Nicole Brooks, Joaquin Fernandez</h2>
-            </div>
+        <div class="nav">
+            <div class="playbarra"><a href="playlist.html">Playlist</a></div>
+            <div class="detbarra"><a href="generos.html">Géneros</a></div>
+            <form action="detallealbum.html" method="GET">
+                <input type="text" name="search" placeholder=Buscar>
+            </form>
         </div>
     </div>
-   
+    <div class="section">
+        <div class="frase">
+            <h2>Mi Playlist</h2>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <div class="deezer">
+            <img class ="logodeezer" src="img/deezer-logo.jpg" alt="logodeezer">
+        </div>
+        <div class="nuestrosnombres">
+            <h2>Kiara Anderson, Nicole Brooks, Joaquin Fernandez</h2>
+        </div>
+    </div>
+
+        
 </body>
 </html>

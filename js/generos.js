@@ -1,0 +1,1 @@
+let alerta = alert('Atención usamos una alerta');

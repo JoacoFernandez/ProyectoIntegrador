@@ -109,12 +109,14 @@ body {
         margin-left: 12px;
         margin-right: 12px;
         padding: 10px;
+        list-style-type: none;
     }
     .lista{
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
         font-size: 23px;
+        background-color: hotpink;
     }
     .footer {
         grid-template-columns: 40% 60%;

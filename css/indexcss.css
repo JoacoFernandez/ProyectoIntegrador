@@ -22,10 +22,15 @@ body {
 }
 
 .nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
+    width: 60%;
+    position: absolute;
+    right: 0px;
+    background-color: grey;
+    display: flex;
+    flex direction: column;
     align-items: center;
+    width:50px;
+    transform:translatex(100%)
 }
 
 .nav a {
@@ -40,6 +45,19 @@ body {
 
 .nav input[type=text] {
     width: 90%;
+}
+
+.burger {
+    display: block;
+    cursor: pointer;
+}
+
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
 }
 .charts {
     display: grid;
@@ -112,6 +130,10 @@ body {
     }
     .nav a{
         font-size: 17px;
+    }
+
+    .burger {
+        display: none;
     }
     .footer {
         grid-template-columns: 40% 60%;

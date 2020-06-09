@@ -1,12 +1,12 @@
 body {
-    background-color: white;
+    background-color: black;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
 }
 .header {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: #383838;
+    border-bottom: 2px solid rgba(255,255,255,.25);
 }
 
 .logo {
@@ -39,7 +39,7 @@ body {
 }
 
 .nav a:hover {
-    color: black;
+    color: grey;
 }
 
 .nav input[type=text] {
@@ -59,7 +59,6 @@ body {
     margin: 5px;
 }
 .section {
-    background-color: #383838;
     margin-top: 0.3px;
     margin-bottom: 1px;
 }
@@ -97,8 +96,7 @@ body {
 .footer {
     display: grid;
     grid-template-columns: 30% 70%;
-    background-color: #383838;
-    bottom: 0;
+    border-top: 2px solid rgba(255,255,255,.25);
 }
 .logodeezer {
     width: 80px;

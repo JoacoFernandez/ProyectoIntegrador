@@ -1,12 +1,12 @@
 body {
-    background-color: white;
+    background-color: black;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
 }
 .header {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: #383838;
+    border-bottom: 2px solid rgba(255,255,255,.25);
 }
 
 .logo {
@@ -35,14 +35,13 @@ body {
 }
 
 .nav a:hover {
-    color: black;
+    color: grey;
 }
 
 .nav input[type=text] {
     width: 90%;
 }
 .section {
-    background-color: #383838;
     margin-top: 1px;
     margin-bottom: 1px;
 }
@@ -51,7 +50,7 @@ body {
     grid-template-columns: 30% 70%;
     float: left;
     width: 100%;
-    background-color: #383838;
+    border-top: 2px solid rgba(255,255,255,.25);
 }
 .logodeezer {
     width: 80px;

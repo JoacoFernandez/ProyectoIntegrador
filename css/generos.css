@@ -41,6 +41,11 @@ body {
 .nav input[type=text] {
     width: 90%;
 }
+.section {
+    background-color: #383838;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
 .frase {
     color: white;
     text-align: center;
@@ -116,7 +121,6 @@ body {
         -moz-column-count: 2;
         column-count: 2;
         font-size: 23px;
-        background-color: hotpink;
     }
     .footer {
         grid-template-columns: 40% 60%;

@@ -58,6 +58,11 @@ body {
     background-color: white;
     margin: 5px;
 }
+.section {
+    background-color: #383838;
+    margin-top: 0.3px;
+    margin-bottom: 1px;
+}
 .charts {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;

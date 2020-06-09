@@ -22,7 +22,7 @@ fetch(url)
         console.log(resultados);
 
         resultados.forEach(function(resultado){
-            lista.innerHTML += '<li>' + resultado.title + '</li>'
+            lista.innerHTML += '<li>' + resultado.title + '</li>';
         })
     })
     .catch(function(error){

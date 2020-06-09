@@ -4,14 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados de busqueda</title>
+    <link rel="stylesheet" href="css/resultado.css">
+
 </head>
 <body>
-    <h1>Resultados de Busqueda</h1>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">Rim-ba</a>
+        </div>
+        <div class="nav">
+            <div class="playbarra"><a href="playlist.html">Playlist</a></div>
+            <div class="detbarra"><a href="generos.html">Géneros</a></div>
+            <form action="resultado.html" method="GET">
+                <input type="text" name="search" placeholder=Buscar>
+            </form>
+        </div>
+    </div>
 
-    <ul class="resultados">
-        
-    </ul>
+    <div class="section">
+        <h1>Resultados de Busqueda</h1>
 
+        <ul class="resultados">
+
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div class="deezer">
+            <!-- <img class ="logodeezer" src="img/deezer-logo.jpg" alt="logodeezer"> -->
+        </div>
+        <div class="nuestrosnombres">
+            <h2>Kiara Anderson, Nicole Brooks, Joaquin Fernandez</h2>
+        </div>
+    </div>
     <script src="js/resultado.js"></script>
 </body>
 </html>

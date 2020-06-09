@@ -27,7 +27,6 @@ body {
     right: 0px;
     background-color: grey;
     display: flex;
-    flex direction: column;
     align-items: center;
     width:50px;
     transform:translatex(100%)

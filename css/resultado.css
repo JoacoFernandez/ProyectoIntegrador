@@ -45,6 +45,14 @@ body {
     margin-top: 1px;
     margin-bottom: 1px;
 }
+h1{
+    color: white;
+}
+.resultados{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
 .footer {
     display: grid;
     grid-template-columns: 30% 70%;

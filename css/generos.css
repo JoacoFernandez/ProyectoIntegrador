@@ -58,6 +58,8 @@ body {
 }
 .cadagenero{
     background-color: rgb(255,255,255, 0.2);
+    list-style-type: none;
+
 }
 .footer {
     display: grid;

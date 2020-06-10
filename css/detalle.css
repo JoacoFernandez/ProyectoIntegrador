@@ -41,12 +41,6 @@ body {
 .nav input[type=text] {
     width: 90%;
 }
-.frase {
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    background-color: rgb(255,255,255, 0.2);
-}
 .footer {
     display: grid;
     grid-template-columns: 30% 70%;

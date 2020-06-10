@@ -10,7 +10,7 @@ fetch(url)
         let listaartistas = document.querySelector(".artistas");
         let resultados = datos.artists.data;
         for(let i=0; i<5; i++){
-            listaartistas.innerHTML += "<li><a href='detail.html?id=" + resultados[i].id + "'>" + resultados[i].name + "</a></li>";
+            listaartistas.innerHTML += "<li><a href='detalle.html?id=" + resultados[i].id + "'>" + resultados[i].name + "</a></li>";
         }     
     })
     .catch(function(error){
@@ -26,7 +26,7 @@ fetch(url)
         let listacanciones = document.querySelector(".canciones");
         let resultados = datos.tracks.data;
         for(let i=0; i<5; i++){
-            listacanciones.innerHTML += "<li><a href='detail.html?id=" + resultados[i].id + "'>" + resultados[i].title + "</a></li>";
+            listacanciones.innerHTML += "<li><a href='detalle.html?id=" + resultados[i].id + "'>" + resultados[i].title + "</a></li>";
         }     
     })
     .catch(function(error){
@@ -42,7 +42,7 @@ fetch(url)
         let listaalbums = document.querySelector(".albums");
         let resultados = datos.albums.data;
         for(let i=0; i<5; i++){
-            listaalbums.innerHTML += "<li><a href='detail.html?id=" + resultados[i].id + "'>" + resultados[i].title + "</a></li>";
+            listaalbums.innerHTML += "<li><a href='detalle.html?id=" + resultados[i].id + "'>" + resultados[i].title + "</a></li>";
         }     
     })
     .catch(function(error){

@@ -52,14 +52,18 @@ body {
     background-color: rgb(255,255,255, 0.2);
 }
 .lista{
-    color: white;
-    text-decoration: none;
     font-size: 23px;
 }
 .cadagenero{
     background-color: rgb(255,255,255, 0.2);
     list-style-type: none;
-
+}
+.cadagenero a{
+    text-decoration: none;
+    color: white;
+}
+.cadagenero a:hover{
+    color: grey;
 }
 .footer {
     display: grid;

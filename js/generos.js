@@ -11,7 +11,7 @@ fetch(url)
         let resultados = datos.data;
 
         resultados.forEach(function(result){
-            lista.innerHTML += "<li class='cadagenero'>" + result.name + "</li>";
+            lista.innerHTML += "<li class='cadagenero'><a href='detalle.html?id=" + result.id + "'>" + result.name + "</a></li>";
         })
     })
     .catch(function(error){

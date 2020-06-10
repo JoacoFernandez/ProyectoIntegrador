@@ -41,6 +41,21 @@ body {
 .nav input[type=text] {
     width: 90%;
 }
+.grid-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.imagen{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.informacion{
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 .footer {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -83,6 +98,9 @@ body {
     }
     .nav a{
         font-size: 17px;
+    }
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
     }
     .footer {
         grid-template-columns: 40% 60%;

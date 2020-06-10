@@ -32,7 +32,7 @@ if(type == "artist"){
 
         let info = document.querySelector(".informacion");
         info.innerHTML += "<h2> Nombre: " + datos.name + "</h2>";
-        info.innerHTML += "<h2> Fans : " + datos.nb_fan + "</h2>";
+        info.innerHTML += "<h2> Fans: " + datos.nb_fan + "</h2>";
 
         let toptracks = proxy + datos.tracklist;
         fetch(toptracks)
@@ -83,8 +83,15 @@ if(type == "artist"){
     })
     .then(function(datos){
         console.log(datos);
-        body.innerHTML += "<p> hola </p>";
-        
+        let imagen = document.querySelector(".imagen");
+        imagen.innerHTML += '<img src="' + datos.album.cover_medium +  '" class="foto" alt="">';
+
+        let info = document.querySelector(".informacion");
+        info.innerHTML += "<h2>Nombre: " + datos.title + "</h2>";
+        info.innerHTML += "<h2><a href='detalle.html?type=" + datos.artist.type + "&id=" + datos.artist.id + "'>" + "Artista: " + datos.artist.name + "</a></h2>";
+        info.innerHTML += "<h2><a href='detalle.html?type=" + datos.album.type + "&id=" + datos.album.id + "'>" + "Album: " + datos.album.title + "</a></h2>";
+        info.innerHTML += "<h2>Duracion: " + datos.duration + " segundos</h2>";
+
     })
     .catch(function(error){
         console.log(error);
@@ -97,11 +104,13 @@ if(type == "artist"){
     })
     .then(function(datos){
         console.log(datos);
-        body.innerHTML += "<p> hola </p>";
-        
+        let imagen = document.querySelector(".imagen");
+        imagen.innerHTML += '<img src="' + datos.picture_medium +  '" class="foto" alt="">';
+
+        let info = document.querySelector(".informacion");
+        info.innerHTML += "<h2>Nombre: " + datos.name + "</h2>";
     })
     .catch(function(error){
         console.log(error);
 })
-
 }

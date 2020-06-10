@@ -123,9 +123,6 @@ body {
     .logo a{
         font-size: 30px;
     }
-    .charts {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
     .nuestrosnombres {
         font-size: 14px;
     }

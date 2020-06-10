@@ -24,7 +24,12 @@ if(type == "artist"){
     .then(function(datos){
         console.log(datos);
         let imagen = document.querySelector(".imagen");
-        imagen.innerHTML += '<img src="' + datos.picture +  '" class="foto" alt="">';
+        if(window < 768){
+            imagen.innerHTML += '<img src="' + datos.picture_medium +  '" class="foto" alt="">';
+        } else if (window < 1024){
+            imagen.innerHTML += '<img src="' + datos.picture_big +  '" class="foto" alt="">';
+        }
+        
 
         let info = document.querySelector(".informacion");
         info.innerHTML += "<h2> Nombre: " + datos.name + "</h2>";
@@ -38,11 +43,11 @@ if(type == "artist"){
             .then(function(infotracks){
                 console.log(infotracks);
                 info.innerHTML += "<h2>Top Canciones:</h2>";
-                let ul = "<ul class='lista'></ul>"
+                info.innerHTML += "<ol class='lista'></ol>";
                 let lista = document.querySelector(".lista");
                 let itemslista = infotracks.data;
                 for(let i=0; i<5; i++){
-                    lista.innerHTML += "<li>" + itemslista.title + "</li>"; //REVISAR!!!!!!!!!!!!!!!!!!
+                    lista.innerHTML += "<li><a href='detalle.html?type=" + itemslista[i].type + "&id=" + itemslista[i].id + "'>" + itemslista[i].title + "</li>";
                 }
             })
             .catch(function(error){
@@ -59,7 +64,8 @@ if(type == "artist"){
     })
     .then(function(datos){
         console.log(datos);
-        body.innerHTML += "<p> hola </p>";
+        let imagen = document.querySelector(".imagen");
+        imagen.innerHTML += '<img src="' + datos.cover_medium +  '" class="foto" alt="">';
         
     })
     .catch(function(error){

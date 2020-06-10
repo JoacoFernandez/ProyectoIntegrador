@@ -30,9 +30,45 @@ if(type == "artist"){
         console.log(error);
 })
 }else if(type == "album"){
+    fetch(url)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(datos){
+        console.log(datos);
+        body.innerHTML += "<p> hola </p>";
+        
+    })
+    .catch(function(error){
+        console.log(error);
+})
 
 }else if(type == "track"){
+    fetch(url)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(datos){
+        console.log(datos);
+        body.innerHTML += "<p> hola </p>";
+        
+    })
+    .catch(function(error){
+        console.log(error);
+})
 
 }else if(type == "genre"){
-    
+    fetch(url)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(datos){
+        console.log(datos);
+        body.innerHTML += "<p> hola </p>";
+        
+    })
+    .catch(function(error){
+        console.log(error);
+})
+
 }

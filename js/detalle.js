@@ -46,7 +46,7 @@ if(type == "artist"){
                 let lista = document.querySelector(".lista");
                 let itemslista = infotracks.data;
                 for(let i=0; i<5; i++){
-                    lista.innerHTML += "<li><a href='detalle.html?type=" + itemslista[i].type + "&id=" + itemslista[i].id + "'>" + itemslista[i].title + "</a></li>";
+                    lista.innerHTML += "<li><a href='detalle.html?type=" + itemslista[i].type + "&id=" + itemslista[i].id + "' class='links'>" + itemslista[i].title + "</a></li>";
                 }
             })
             .catch(function(error){
@@ -68,7 +68,7 @@ if(type == "artist"){
 
         let info = document.querySelector(".informacion");
         info.innerHTML += "<h2>Nombre: " + datos.title + "</h2>";
-        info.innerHTML += "<h2><a href='detalle.html?type=" + datos.artist.type + "&id=" + datos.artist.id + "'>" + "Artista: " + datos.artist.name + "</a></h2>";
+        info.innerHTML += "<h2><a href='detalle.html?type=" + datos.artist.type + "&id=" + datos.artist.id + "' class='links'>" + "Artista: " + datos.artist.name + "</a></h2>";
         info.innerHTML += "<h2>Fecha de salida: " + datos.release_date + "</h2>";
         
     })
@@ -88,8 +88,8 @@ if(type == "artist"){
 
         let info = document.querySelector(".informacion");
         info.innerHTML += "<h2>Nombre: " + datos.title + "</h2>";
-        info.innerHTML += "<h2><a href='detalle.html?type=" + datos.artist.type + "&id=" + datos.artist.id + "'>" + "Artista: " + datos.artist.name + "</a></h2>";
-        info.innerHTML += "<h2><a href='detalle.html?type=" + datos.album.type + "&id=" + datos.album.id + "'>" + "Album: " + datos.album.title + "</a></h2>";
+        info.innerHTML += "<h2><a href='detalle.html?type=" + datos.artist.type + "&id=" + datos.artist.id + "' class='links'>" + "Artista: " + datos.artist.name + "</a></h2>";
+        info.innerHTML += "<h2><a href='detalle.html?type=" + datos.album.type + "&id=" + datos.album.id + "' class='links'>" + "Album: " + datos.album.title + "</a></h2>";
         info.innerHTML += "<h2>Duracion: " + datos.duration + " segundos</h2>";
 
     })

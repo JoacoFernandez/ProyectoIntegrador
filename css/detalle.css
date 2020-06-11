@@ -56,6 +56,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+.links{
+    text-decoration: none;
+    color: white;
+}
 .footer {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -99,6 +103,10 @@ body {
     .nav a{
         font-size: 17px;
     }
+    .section{
+        margin: 75px;
+        background-color: rgb(255,255,255, 0.2);
+    }
     .grid-container{
         grid-template-columns: 1fr 1fr;
     }
@@ -122,6 +130,9 @@ body {
     }
     .logo a{
         font-size: 30px;
+    }
+    .section{
+        margin: 105px;
     }
     .nuestrosnombres {
         font-size: 14px;

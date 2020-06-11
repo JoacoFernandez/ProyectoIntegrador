@@ -125,6 +125,7 @@ if(type == "artist"){
         info.innerHTML += "<h2><a href='detalle.html?type=" + datos.album.type + "&id=" + datos.album.id + "' class='links'>" + "Album: " + datos.album.title + "</a></h2>";
         info.innerHTML += "<h2> Fecha de salida: " + datos.release_date + "</h2>";
         info.innerHTML += "<h2>Duracion: " + datos.duration + " segundos</h2>";
+        info.innerHTML += '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + id + '&app_id=1" width="300" height="90"></iframe>';
         info.innerHTML += "<a href='#' class='boton'> Agregar a la playlist </a>";
 
         let recuperoStorage = localStorage.getItem('playlist');

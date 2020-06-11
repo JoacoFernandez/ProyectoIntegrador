@@ -48,12 +48,22 @@ body {
     background-color: rgb(255,255,255, 0.2);
 }
 .playlistwrapper{
-    background-color: white;
+    background-color: rgb(255,255,255, 0.2);
+    list-style-type: none;
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
 }
 .links{
     text-decoration: none;
-    color: ;
+    color: white;
     font-size: ;
+}
+iframe{
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 .footer {
     display: grid;

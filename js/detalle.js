@@ -125,31 +125,65 @@ if(type == "artist"){
         info.innerHTML += "<h2><a href='detalle.html?type=" + datos.album.type + "&id=" + datos.album.id + "' class='links'>" + "Album: " + datos.album.title + "</a></h2>";
         info.innerHTML += "<h2> Fecha de salida: " + datos.release_date + "</h2>";
         info.innerHTML += "<h2>Duracion: " + datos.duration + " segundos</h2>";
+        info.innerHTML += "<a href='#' class='boton'> Agregar a la playlist </a>";
 
-    })
-    .catch(function(error){
-        console.log(error);
-})
-
-}else if(type == "genre"){
-    fetch(url)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(datos){
-        console.log(datos);
-        let imagen = document.querySelector(".imagen");
-        let x = window.matchMedia("(max-width: 768px)");
-        if(x.matches){
-            imagen.innerHTML += '<img src="' + datos.picture_medium +  '" class="foto" alt="">';
+        let recuperoStorage = localStorage.getItem('playlist');
+        if(recuperoStorage == null){
+            playlist = [];
         } else {
-            imagen.innerHTML += '<img src="' + datos.picture_big +  '" class="foto" alt="">';
+            playlist = JSON.parse(recuperoStorage);
         }
 
-        let info = document.querySelector(".informacion");
-        info.innerHTML += "<h2>Nombre: " + datos.name + "</h2>";
+        let boton = document.querySelector('.boton');
+        if(playlist.includes(id)){
+            boton.innerHTML = "Quitar de la playlist";
+        }
+
+        boton.addEventListener('click', function(e){
+            e.preventDefault();
+
+            if(playlist.includes(id)){
+                let indiceArray = playlist.indexOf(id);
+                playlist.splice(indiceArray, 1);
+                boton.innerHTML = "Agregar a la playlist";
+                console.log(playlist);
+            } else{
+                playlist.push(id);
+                boton.innerHTML = "Quitar de la playlist";
+            }
+            
+            let playlistParaStorage = JSON.stringify(playlist);
+            localStorage.setItem('playlist', playlistParaStorage);
+            console.log(localStorage);
+        })
+
     })
     .catch(function(error){
         console.log(error);
-})
+    })
+
+    
+
+
+} else if(type == "genre"){
+    fetch(url)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(datos){
+            console.log(datos);
+            let imagen = document.querySelector(".imagen");
+            let x = window.matchMedia("(max-width: 768px)");
+            if(x.matches){
+                imagen.innerHTML += '<img src="' + datos.picture_medium +  '" class="foto" alt="">';
+            } else {
+                imagen.innerHTML += '<img src="' + datos.picture_big +  '" class="foto" alt="">';
+            }
+
+            let info = document.querySelector(".informacion");
+            info.innerHTML += "<h2>Nombre: " + datos.name + "</h2>";
+        })
+        .catch(function(error){
+            console.log(error);
+    })
 }

@@ -24,11 +24,13 @@ if(type == "artist"){
     .then(function(datos){
         console.log(datos);
         let imagen = document.querySelector(".imagen");
-        if(window < 768){
+        let x = window.matchMedia("(max-width: 768px)");
+        if(x.matches){
             imagen.innerHTML += '<img src="' + datos.picture_medium +  '" class="foto" alt="">';
-        } else if (window < 1024){
+        } else {
             imagen.innerHTML += '<img src="' + datos.picture_big +  '" class="foto" alt="">';
         }
+        
 
         let info = document.querySelector(".informacion");
         info.innerHTML += "<h2> Nombre: " + datos.name + "</h2>";
@@ -64,7 +66,13 @@ if(type == "artist"){
     .then(function(datos){
         console.log(datos);
         let imagen = document.querySelector(".imagen");
-        imagen.innerHTML += '<img src="' + datos.cover_medium +  '" class="foto" alt="">';
+        
+        let x = window.matchMedia("(max-width: 768px)");
+        if(x.matches){
+            imagen.innerHTML += '<img src="' + datos.cover_medium +  '" class="foto" alt="">';
+        } else {
+            imagen.innerHTML += '<img src="' + datos.cover_big +  '" class="foto" alt="">';
+        }
 
         let info = document.querySelector(".informacion");
         info.innerHTML += "<h2>Nombre: " + datos.title + "</h2>";
@@ -84,7 +92,12 @@ if(type == "artist"){
     .then(function(datos){
         console.log(datos);
         let imagen = document.querySelector(".imagen");
-        imagen.innerHTML += '<img src="' + datos.album.cover_medium +  '" class="foto" alt="">';
+        let x = window.matchMedia("(max-width: 768px)");
+        if(x.matches){
+            imagen.innerHTML += '<img src="' + datos.album.cover_medium +  '" class="foto" alt="">';
+        } else {
+            imagen.innerHTML += '<img src="' + datos.album.cover_big +  '" class="foto" alt="">';
+        }
 
         let info = document.querySelector(".informacion");
         info.innerHTML += "<h2>Nombre: " + datos.title + "</h2>";
@@ -105,7 +118,12 @@ if(type == "artist"){
     .then(function(datos){
         console.log(datos);
         let imagen = document.querySelector(".imagen");
-        imagen.innerHTML += '<img src="' + datos.picture_medium +  '" class="foto" alt="">';
+        let x = window.matchMedia("(max-width: 768px)");
+        if(x.matches){
+            imagen.innerHTML += '<img src="' + datos.picture_medium +  '" class="foto" alt="">';
+        } else {
+            imagen.innerHTML += '<img src="' + datos.picture_big +  '" class="foto" alt="">';
+        }
 
         let info = document.querySelector(".informacion");
         info.innerHTML += "<h2>Nombre: " + datos.name + "</h2>";

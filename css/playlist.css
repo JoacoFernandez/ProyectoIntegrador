@@ -47,6 +47,10 @@ body {
     color: white;
     background-color: rgb(255,255,255, 0.2);
 }
+h2{
+    color: white;
+    
+}
 .playlistwrapper{
     background-color: rgb(255,255,255, 0.2);
     list-style-type: none;

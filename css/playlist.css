@@ -50,10 +50,9 @@ body {
 .playlistwrapper{
     background-color: rgb(255,255,255, 0.2);
     list-style-type: none;
-    display: grid;
-    justify-content: left;
-    align-items: center;
-    gap: 10px;
+}
+.cadatrack{
+    margin-top: 15px;
 }
 .links{
     text-decoration: none;

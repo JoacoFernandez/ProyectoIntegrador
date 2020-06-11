@@ -53,7 +53,7 @@ if(type == "artist"){
             })
             .catch(function(error){
                 console.log(error);
-            })
+        })
     })
     .catch(function(error){
         console.log(error);
@@ -78,7 +78,26 @@ if(type == "artist"){
         info.innerHTML += "<h2>Nombre: " + datos.title + "</h2>";
         info.innerHTML += "<h2><a href='detalle.html?type=" + datos.artist.type + "&id=" + datos.artist.id + "' class='links'>" + "Artista: " + datos.artist.name + "</a></h2>";
         info.innerHTML += "<h2>Fecha de salida: " + datos.release_date + "</h2>";
-        
+        let tracks = proxy + datos.tracklist;
+        fetch(tracks)
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(tracks){
+                console.log(tracks);
+                info.innerHTML += "<h2>Canciones:</h2>";
+                info.innerHTML += "<ol class='lista'></ol>";
+                let lista = document.querySelector(".lista");
+                let itemslista = tracks.data;
+                itemslista.forEach(function(result){
+                    lista.innerHTML += "<li><a href='detalle.html?type=" + result.type + "&id=" + result.id + "' class='links'>" + result.title + "</a></li>";
+                })
+            
+                
+            })
+            .catch(function(error){
+                console.log(error);
+        })
     })
     .catch(function(error){
         console.log(error);

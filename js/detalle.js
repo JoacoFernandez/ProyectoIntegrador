@@ -34,6 +34,7 @@ if(type == "artist"){
 
         let info = document.querySelector(".informacion");
         info.innerHTML += "<h2> Nombre: " + datos.name + "</h2>";
+        info.innerHTML += "<h2> Albums: " + datos.nb_album + "</h2>";
         info.innerHTML += "<h2> Fans: " + datos.nb_fan + "</h2>";
 
         let toptracks = proxy + datos.tracklist;
@@ -122,6 +123,7 @@ if(type == "artist"){
         info.innerHTML += "<h2>Nombre: " + datos.title + "</h2>";
         info.innerHTML += "<h2><a href='detalle.html?type=" + datos.artist.type + "&id=" + datos.artist.id + "' class='links'>" + "Artista: " + datos.artist.name + "</a></h2>";
         info.innerHTML += "<h2><a href='detalle.html?type=" + datos.album.type + "&id=" + datos.album.id + "' class='links'>" + "Album: " + datos.album.title + "</a></h2>";
+        info.innerHTML += "<h2> Fecha de salida: " + datos.release_date + "</h2>";
         info.innerHTML += "<h2>Duracion: " + datos.duration + " segundos</h2>";
 
     })

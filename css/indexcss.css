@@ -115,6 +115,10 @@ body {
     margin: 0 10px;
 }
 
+.carouselslide .current-slide {
+    background: black;
+}
+
 .burger {
     display: block;
     cursor: pointer;

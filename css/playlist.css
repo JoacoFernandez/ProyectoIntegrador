@@ -123,6 +123,9 @@ iframe{
         margin-right: 80px;
         padding-top: 7px;
         padding-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 15px;
     }
     .footer {
         grid-template-rows: 1fr;
@@ -142,6 +145,7 @@ iframe{
     .playlistwrapper{
         margin-right: 95px;
         margin-left: 95px;
+        padding-left: 80px;
     }
     .links{
         font-size: 21px;

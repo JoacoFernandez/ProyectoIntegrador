@@ -9,7 +9,11 @@ body {
     border-bottom: 2px solid rgba(255,255,255,.25);
     background-color: black;
 }
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
 .logo {
     display: grid;
     justify-content: center;
@@ -46,11 +50,7 @@ body {
 .nav input[type=text] {
     width: 90%;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
+
 .burger {
     display: block;
     cursor: pointer;

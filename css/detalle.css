@@ -47,28 +47,29 @@ body {
     top: 0;
     width: 100%
 }
-.frase {
-    text-align: center;
-    font-size: 30px;
+.grid-container{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.imagen{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.informacion{
     color: white;
-    background-color: rgb(255,255,255, 0.2);
-}
-h2{
-    color: white;
-}
-.playlistwrapper{
-    background-color: rgb(255,255,255, 0.2);
-    list-style-type: none;
-}
-.cadatrack{
-    margin-top: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 .links{
     text-decoration: none;
     color: white;
-    font-size: ;
 }
-iframe{
+.boton{
+    text-decoration: none;
+    color: black;
+    background-color: white;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -116,6 +117,13 @@ iframe{
     .nav a{
         font-size: 17px;
     }
+    .section{
+        margin: 75px;
+        background-color: rgb(255,255,255, 0.2);
+    }
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
     .footer {
         grid-template-columns: 40% 60%;
     }
@@ -137,8 +145,8 @@ iframe{
     .logo a{
         font-size: 30px;
     }
-    .charts {
-        grid-template-columns: 1fr 1fr 1fr;
+    .section{
+        margin: 105px;
     }
     .nuestrosnombres {
         font-size: 14px;

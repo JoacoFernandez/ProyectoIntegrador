@@ -1,3 +1,14 @@
+window.onscroll = function() {myFunction()};
+var header = document.querySelector('.header');
+var sticky = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
 let proxy = "https://cors-anywhere.herokuapp.com/";
 let url = proxy + "https://api.deezer.com/genre";
 
@@ -11,7 +22,7 @@ fetch(url)
         let resultados = datos.data;
 
         resultados.forEach(function(result){
-            lista.innerHTML += "<li class='cadagenero'>" + result.name + "</li>";
+            lista.innerHTML += "<li class='cadagenero'><a href='detalle.html?type=" + result.type + "&id=" + result.id + "'>" + result.name + "</a></li>";
         })
     })
     .catch(function(error){

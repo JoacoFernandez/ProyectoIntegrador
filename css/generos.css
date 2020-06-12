@@ -1,12 +1,13 @@
 body {
-    background-color: white;
+    background-color: black;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
 }
 .header {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: #383838;
+    border-bottom: 2px solid rgba(255,255,255,.25);
+    background-color: black;
 }
 
 .logo {
@@ -35,32 +36,53 @@ body {
 }
 
 .nav a:hover {
-    color: black;
+    color: grey;
 }
 
 .nav input[type=text] {
     width: 90%;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+.section {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
 .frase {
     color: white;
     text-align: center;
     font-size: 12px;
-    background-color: gray;
+    background-color: rgb(255,255,255, 0.2);
 }
 .lista{
-    color: white;
-    text-decoration: none;
     font-size: 23px;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .cadagenero{
-    background-color: gray;
+    background-color: rgb(255,255,255, 0.2);
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 10px;
+}
+.cadagenero a{
+    text-decoration: none;
+    color: white;
+}
+.cadagenero a:hover{
+    color: grey;
 }
 .footer {
     display: grid;
     grid-template-columns: 30% 70%;
     width: 100%;
-    background-color: #383838;
-    float: right;
+    border-top: 2px solid rgba(255,255,255,.25);
 }
 .logodeezer {
     width: 80px;
@@ -102,21 +124,9 @@ body {
     .frase{
         font-size: 17px;
     }
-    .cadagenero{
-        background-color: gray;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 12px;
-        margin-right: 12px;
-        padding: 10px;
-        list-style-type: none;
-    }
     .lista{
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
+        grid-template-columns: 1fr 1fr;
         font-size: 23px;
-        background-color: hotpink;
     }
     .footer {
         grid-template-columns: 40% 60%;
@@ -142,9 +152,7 @@ body {
     .lista{
         margin-right: 30px;
         margin-left: 30px;
-        -webkit-column-count: 3;
-        -moz-column-count: 3;
-        column-count: 3;
+        grid-template-columns: 1fr 1fr 1fr;
         font-size: 30px;
     }
     .nuestrosnombres {

@@ -76,29 +76,23 @@ iframe{
 }
 .footer {
     display: grid;
-    grid-template-columns: 30% 70%;
-    float: left;
-    width: 100%;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
     border-top: 2px solid rgba(255,255,255,.25);
-
 }
-.logodeezer {
-    width: 80px;
-    padding-top: 15px;
-    padding-left: 10px;
+.logos {
+    width: 43px;
 }
 .nuestrosnombres {
-    float: right;
     color: white;
-    font-size: 9px;
+    font-size: 13px;
 }
-
 
 @media screen and (min-width: 768px) {
     .header {
         grid-template-columns:  2fr 1fr;
         grid-template-rows: 1fr;
-        height: 50px;
     }
     .logo {
         float: left;
@@ -119,20 +113,14 @@ iframe{
         font-size: 17px;
     }
     .footer {
-        grid-template-columns: 40% 60%;
-    }
-    .logodeezer {
-        width: 110px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .nuestrosnombres {
         font-size: 13px;
-        float: right;
     }
 }
 @media screen and (min-width: 1024px) {
-    .header{
-        height: 60px;
-    }
     .nav a{
         font-size: 20px;
     }

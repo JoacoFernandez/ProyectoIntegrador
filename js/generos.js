@@ -22,7 +22,7 @@ fetch(url)
         let resultados = datos.data;
 
         resultados.forEach(function(result){
-            lista.innerHTML += "<li class='cadagenero'><a href='detalle.html?type=" + result.type + "&id=" + result.id + "'>" + result.name + "</a></li>";
+            lista.innerHTML += "<li class='cadagenero'><a href='detalle.html?type=" + result.type + "&id=" + result.id + "'><img src='" + result.picture_small +  "' class='foto' alt=''>" + " " + result.name + "</a></li>";
         })
     })
     .catch(function(error){

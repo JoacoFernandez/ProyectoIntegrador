@@ -8,6 +8,7 @@ body {
     grid-template-rows: 1fr 1fr;
     border-bottom: 2px solid rgba(255,255,255,.25);
     background-color: black;
+    z-index: 999;
 }
 
 .logo {
@@ -81,6 +82,7 @@ h1{
 @media screen and (min-width: 768px) {
     .header {
         grid-template-columns:  2fr 1fr;
+        grid-template-rows: 1fr;
         height: 50px;
     }
     .logo {

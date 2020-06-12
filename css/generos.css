@@ -8,6 +8,7 @@ body {
     grid-template-rows: 1fr 1fr;
     border-bottom: 2px solid rgba(255,255,255,.25);
     background-color: black;
+    z-index: 999;
 }
 
 .logo {

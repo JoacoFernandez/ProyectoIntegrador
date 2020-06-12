@@ -145,9 +145,26 @@ fetch(url)
                 if(x.matches){
                     imagen.innerHTML += '<img src="' + datos.picture_medium +  '" class="foto" alt="">';
                 } else {
-                    magen.innerHTML += '<img src="' + datos.picture_big +  '" class="foto" alt="">';
+                    imagen.innerHTML += '<img src="' + datos.picture_big +  '" class="foto" alt="">';
                 }
                 info.innerHTML += "<h2>Nombre: " + datos.name + "</h2>";
+                info.innerHTML += "<h2>Artistas: </h2>";
+                info.innerHTML += "<ul></ul>";
+                let listaartistas = document.querySelector('ul');
+                fetch(url + '/artists')
+                    .then(function(response){
+                        return response.json();
+                    })
+                    .then(function(genreartists){
+                        console.log(genreartists);
+                        let nose = genreartists.data;
+                        for(let i=0; i<10; i++){
+                            listaartistas.innerHTML += "<li><a class='links' href='detalle.html?type=" + nose[i].type + "&id=" + nose[i].id + "'>" + nose[i].name + "</a></li>";
+                        }
+                    })
+                    .catch(function(error){
+                        console.log(error);
+                    })
             break;
         }
     })

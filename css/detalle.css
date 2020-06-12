@@ -67,6 +67,9 @@ body {
     text-decoration: none;
     color: white;
 }
+ul{
+    list-style: none;
+}
 .boton{
     text-decoration: none;
     color: black;

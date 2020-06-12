@@ -26,10 +26,8 @@ body {
     position: absolute;
     right: 0px;
     background-color: grey;
-    display: flex;
     align-items: center;
-    width:50px;
-    transform:translatex(100%)
+
 }
 
 .nav a {

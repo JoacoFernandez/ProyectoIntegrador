@@ -9,11 +9,7 @@ body {
     border-bottom: 2px solid rgba(255,255,255,.25);
     background-color: black;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
+
 .logo {
     display: grid;
     justify-content: center;
@@ -27,12 +23,10 @@ body {
 }
 
 .nav {
-    width: 60%;
-    position: absolute;
-    right: 0px;
-    background-color: grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
     align-items: center;
-
 }
 
 .nav a {
@@ -48,7 +42,11 @@ body {
 .nav input[type=text] {
     width: 90%;
 }
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
 .carousel {
     position: relative;
     height: 600px;

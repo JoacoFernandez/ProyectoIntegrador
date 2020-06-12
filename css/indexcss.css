@@ -138,7 +138,6 @@ body {
     margin-bottom: 20px;
     gap: 10px;
 }
-
 .chart{
     background-color: rgb(255,255,255, 0.2);
 }
@@ -158,12 +157,15 @@ body {
 }
 .canciones{
     list-style-type: none;
+    padding: 0px;
 }
 .albums{
     list-style-type: none;
+    padding: 0px;
 }
 .artistas{
     list-style-type: none;
+    padding: 0px;
 }
 .item{
     border-bottom: 2px solid rgba(255,255,255,.25);

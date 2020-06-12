@@ -10,7 +10,7 @@ fetch(url)
         let listaartistas = document.querySelector(".artistas");
         let resultados = datos.artists.data;
         for(let i=0; i<5; i++){
-            listaartistas.innerHTML += "<li class='item'><a href='detalle.html?type=" + resultados[i].type + "&id=" + resultados[i].name + "</a></li>";
+            listaartistas.innerHTML += "<li class='item'><a href='detalle.html?type=" + resultados[i].type + "&id=" +  resultados[i].id + "'>"  + resultados[i].name + "</a></li>";
         }     
     })
     .catch(function(error){

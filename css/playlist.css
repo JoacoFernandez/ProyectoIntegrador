@@ -60,6 +60,7 @@ h2{
 .playlistwrapper{
     background-color: rgb(255,255,255, 0.2);
     list-style-type: none;
+    padding-bottom: 10px;
 }
 .cadatrack{
     margin-top: 15px;
@@ -67,7 +68,12 @@ h2{
 .links{
     text-decoration: none;
     color: white;
-    font-size: ;
+    font-size: 18px;
+}
+.linksartist{
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
 }
 iframe{
     display: grid;
@@ -112,6 +118,12 @@ iframe{
     .nav a{
         font-size: 17px;
     }
+    .playlistwrapper{
+        margin-left: 80px;
+        margin-right: 80px;
+        padding-top: 7px;
+        padding-bottom: 10px;
+    }
     .footer {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
@@ -127,8 +139,15 @@ iframe{
     .logo a{
         font-size: 30px;
     }
-    .charts {
-        grid-template-columns: 1fr 1fr 1fr;
+    .playlistwrapper{
+        margin-right: 95px;
+        margin-left: 95px;
+    }
+    .links{
+        font-size: 21px;
+    }
+    .linksartist{
+        font-size: 18px;
     }
     .nuestrosnombres {
         font-size: 14px;

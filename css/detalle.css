@@ -7,6 +7,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     border-bottom: 2px solid rgba(255,255,255,.25);
+    background-color: black;
 }
 
 .logo {
@@ -40,6 +41,11 @@ body {
 
 .nav input[type=text] {
     width: 90%;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 .grid-container{
     display: grid;

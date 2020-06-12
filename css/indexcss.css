@@ -91,6 +91,7 @@ body {
 
 .carousel-button img {
     width: 20px;
+    background-color: white;
 }
 
 .carousel__button--left {
@@ -112,7 +113,7 @@ body {
     border: 0;
     height: 5px;
     border-style: ridge;
-    background-color: black;
+    background-color: lightgray;
     margin: 0 10px;
 }
 

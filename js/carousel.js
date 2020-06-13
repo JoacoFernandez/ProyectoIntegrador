@@ -7,34 +7,55 @@ const dots = Array.from(dotsNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
 
-
-
 /*console.log(slideSize);*/
-
 //los slides al lado de cada uno//
 
 const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px' ;
+    slide.style.left = slideWidth * index + 'px';
 };
-
 slides.forEach(setSlidePosition);
 
+const moveToSlide = (track, currentSlide, targetSlide) => {
+    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+    currentSlide.classList.remove('current-slide');
+    targetSlide.classList.add('current-slide');
+}
 
-/*slides[0].style.left = slideWidth * 0 + 'px';
-slides[1].style.left = slideWidth + 1 + 'px';
-slides[2].style.left = slideWidth * 2 + 'px'; */
 
+prevButton.addEventListener('click' , e => {
+const currentSlide = track.querySelector('.current-slide');
+const prevSlide = currentSlide.previousElementSibling;
+
+moveToSlide(track, currentSlide, prevSlide);
+});
 
 //cuando aprieto para la izq que se mueva, y vice versa
 //nav indicator//
 
 nextButton.addEventListener('click', e => {
-const currentSlide = track.querySelector('.current-slide');
-const nextSlide = currentSlide.nextElementSibling;
-const amountToMove = nextSlide.style.left;
-
+    const currentSlide = track.querySelector('.current-slide');
+    const nextSlide = currentSlide.nextElementSibling;
+  
+    moveToSlide(track, currentSlide, nextSlide);
 //move to next slide//
-track.style.transform = 'translateX(' + amountToMove + ')';
-currentSlide.classList.remove('.current-slide');
-nextSlide.classList.add('.current-slide');
+ });
+
+//si usas un class list sin punto, si usas query con punto//
+
+dotsNav.addEventListener('click', e => {
+   //que indicador apretamos//
+    const targetDot = e.target.closest('button');
+
+    if (!targetDot) return; //si algo en la funcion es falso, el return para la funcion//
+  
+    const currentSlide = track.querySelector('.current-slide');
+    const currentDot = dotsNav.querySelector('.current-slide');
+    const targetIndex = dots.findIndex(dot => dot === targetDot);
+    const targetSlide = slides[targetIndex];
+
+    moveToSlide(track, currentSlide, targetSlide);
+
+    currentDot.classList.remove('current-slide');
+    targetDot.classList.add('current-slide')
+    
 })

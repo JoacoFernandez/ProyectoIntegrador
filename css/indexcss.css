@@ -67,6 +67,7 @@ object-fit: cover;
     padding: 10px;
     height: 90%;
     position: relative;
+    overflow: hidden;
 }
 
 /*object-fit: cover;*/
@@ -115,21 +116,22 @@ object-fit: cover;
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    background-color: black;
+    background-color: transparent
     
 }
 
-.carouselindicator {
+.carousel-indicator {
     border: 0;
     height: 5px;
     border-style: ridge;
-    background-color: transparent
-    margin: 0 12px;
-    padding: 10px;
+    margin: 8px;
+    background-color: lightgray;
+    cursor: pointer;
 }
+    
 
-.carouselindicator.current_slide {
-    background: rgba(0,0,0,.75);
+.carousel-indicator.current-slide {
+   color: rgba(255,255,255,.25);
 }
 
 .burger {

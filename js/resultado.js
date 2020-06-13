@@ -39,6 +39,8 @@ fetch(url)
         resultados.forEach(function(resultado){
             lista.innerHTML += '<li>' + resultado.title + '</li>' + resultado.cover;
         })
+
+      
                 })
 
     .catch(function(error){

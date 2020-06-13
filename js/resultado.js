@@ -15,12 +15,16 @@ console.log(queryString);
 let searchParams = new URLSearchParams(queryString);
 console.log(searchParams);
 
+let imagen = document.querySelector(".imagen");
+let x = window.matchMedia("(max-width: 768px)");    ////
+
 let search = searchParams.get('search');
 console.log(search);
 
 let proxy = "https://cors-anywhere.herokuapp.com/";
 let url = proxy + "https://api.deezer.com/search?q=" + search;
 console.log(url);
+
 
 fetch(url)
     .then(function(response){
@@ -33,9 +37,10 @@ fetch(url)
         console.log(resultados);
 
         resultados.forEach(function(resultado){
-            lista.innerHTML += '<li>' + resultado.title + '</li>';
+            lista.innerHTML += '<li>' + resultado.title + '</li>' + resultado.cover;
         })
-    })
+                })
+
     .catch(function(error){
         console.log(error);
     })

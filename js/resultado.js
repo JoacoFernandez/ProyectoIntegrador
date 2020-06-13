@@ -19,7 +19,7 @@ let search = searchParams.get('search');
 console.log(search);
 
 let proxy = "https://cors-anywhere.herokuapp.com/";
-let url = proxy + "https://api.deezer.com/search?q=" + search;
+let url = proxy + 'https://api.deezer.com/search/?q=' + search;
 console.log(url);
 
 fetch(url)

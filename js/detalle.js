@@ -109,36 +109,46 @@ fetch(url)
                 info.innerHTML += "<h2>Duracion: " + datos.duration + " segundos</h2>";
                 info.innerHTML += '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + id + '&app_id=1" width="300" height="90"></iframe>';
                 info.innerHTML += "<a href='#' class='boton'> Agregar a la playlist </a>";
-        
-                let recuperoStorage = localStorage.getItem('playlist');
-                if(recuperoStorage == null){
-                    playlist = [];
-                } else {
-                    playlist = JSON.parse(recuperoStorage);
-                }
-        
-                let boton = document.querySelector('.boton');
-                if(playlist.includes(id)){
-                    boton.innerHTML = "Quitar de la playlist";
-                }
-        
-                boton.addEventListener('click', function(e){
-                    e.preventDefault();
-        
-                    if(playlist.includes(id)){
-                        let indiceArray = playlist.indexOf(id);
-                        playlist.splice(indiceArray, 1);
-                        boton.innerHTML = "Agregar a la playlist";
-                        console.log(playlist);
-                    } else{
-                        playlist.push(id);
-                        boton.innerHTML = "Quitar de la playlist";
-                    }
-                    
-                    let playlistParaStorage = JSON.stringify(playlist);
-                    localStorage.setItem('playlist', playlistParaStorage);
-                    console.log(localStorage);
+                
+                boton.addEventListener('click', function(forms){
+                    prompt (<div class="form-group">
+                    <p>¿A que playlist queres agregar?</p>
+                    <select name="playlists" id="">
+                    </select>
+                    </div>);
                 })
+
+
+
+                // let recuperoStorage = localStorage.getItem('playlist');
+                // if(recuperoStorage == null){
+                //     playlist = [];
+                // } else {
+                //     playlist = JSON.parse(recuperoStorage);
+                // }
+        
+                // let boton = document.querySelector('.boton');
+                // if(playlist.includes(id)){
+                //     boton.innerHTML = "Quitar de la playlist";
+                // }
+        
+                // boton.addEventListener('click', function(e){
+                //     e.preventDefault();
+        
+                //     if(playlist.includes(id)){
+                //         let indiceArray = playlist.indexOf(id);
+                //         playlist.splice(indiceArray, 1);
+                //         boton.innerHTML = "Agregar a la playlist";
+                //         console.log(playlist);
+                //     } else{
+                //         playlist.push(id);
+                //         boton.innerHTML = "Quitar de la playlist";
+                //     }
+                    
+                //     let playlistParaStorage = JSON.stringify(playlist);
+                //     localStorage.setItem('playlist', playlistParaStorage);
+                //     console.log(localStorage);
+                // })
             break;
 
             case ('genre'):

@@ -129,10 +129,11 @@ object-fit: cover;
     cursor: pointer;
 }
     
-
 .carousel-indicator.current-slide {
    color: rgba(255,255,255,.25);
 }
+
+.is-hidden { display: none;}
 
 .burger {
     display: block;

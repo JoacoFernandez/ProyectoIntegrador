@@ -57,5 +57,10 @@ dotsNav.addEventListener('click', e => {
 
     currentDot.classList.remove('current-slide');
     targetDot.classList.add('current-slide')
+
+    if (targetIndex === 0) {
+        prevButton.classList.add('is-hidden');
+        
+    }
     
 })

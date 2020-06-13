@@ -60,7 +60,14 @@ dotsNav.addEventListener('click', e => {
 
     if (targetIndex === 0) {
         prevButton.classList.add('is-hidden');
-        
+        nextButton.classList.remove('is-hidden');
+    } else if (targeIndex === slides.length - 1 ) {
+        prevButton.classList.remove('is-hidden');
+        nextButton.classList.add('is-hidden');
+    } else {
+        prevButton.classList.remove('is-hidden');
+        nextButton.classList.remove('is-hidden');
     }
+    
     
 })

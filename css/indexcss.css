@@ -133,7 +133,9 @@ object-fit: cover;
    color: rgba(255,255,255,.25);
 }
 
-.is-hidden { display: none;}
+.is-hidden { 
+    display: none;
+}
 
 .burger {
     display: block;

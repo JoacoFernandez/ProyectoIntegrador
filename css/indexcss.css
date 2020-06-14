@@ -1,7 +1,7 @@
 body {
     background-color: black;
     margin: 0px;
-    font-family:'Electrolize', sans-serif;;
+    font-family:'Electrolize', sans-serif;
 }
 .header {
     display: grid;
@@ -42,12 +42,31 @@ body {
 
 .nav input[type=text] {
     width: 90%;
+    color: darkcyan;
+    font-family:'Electrolize', sans-serif;
+    font-size: 20px;
 }
 .sticky {
     position: fixed;
     top: 0;
     width: 100%
 }
+
+.searchbar {
+    border-radius: 50px;
+    box-shadow: 0 0 15px 1px;
+    outline: none;
+}
+
+.searchbar .input {
+    border-radius: 50px;
+    box-shadow: 0 0 15px 1px;
+    outline: none;
+    color: dodgerblue;
+    font-family:'Electrolize', sans-serif;
+}
+
+
 .carousel {
     position: relative;
     height: 400px;

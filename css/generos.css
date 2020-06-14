@@ -46,7 +46,34 @@ h1 {
 
 .nav input[type=text] {
     width: 90%;
+    color: darkcyan;
+    padding: 5px;
+    font-family:'Electrolize', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
 }
+
+.searchbtn {
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    background-color: #a1dfcf;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.searchbtn .fas { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s linear;
+}
+
 .sticky {
     position: fixed;
     top: 0;

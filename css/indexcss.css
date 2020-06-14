@@ -1,7 +1,7 @@
 body {
     background-color: black;
     margin: 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family:'Electrolize', sans-serif;;
 }
 .header {
     display: grid;
@@ -54,6 +54,7 @@ body {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 15px ;
+    margin-top: 10px;
 }
 
 .carousel-image{

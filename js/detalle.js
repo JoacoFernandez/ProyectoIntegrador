@@ -57,7 +57,7 @@ fetch(url)
                         let lista = document.querySelector(".lista");
                         let itemslista = infotracks.data;
                         for(let i=0; i<5; i++){
-                            lista.innerHTML += "<li><a href='detalle.html?type=" + itemslista[i].type + "&id=" + itemslista[i].id + "' class='links'>" + itemslista[i].title + "</a></li>";
+                            lista.innerHTML += "<li><a href='detalle.html?type=" + itemslista[i].type + "&id=" + itemslista[i].id + "' class='links'>" + itemslista[i].title + " </a></li>";
                         }
                     })
                     .catch(function(error){

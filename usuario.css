@@ -77,7 +77,7 @@
     height: 100%;
   }
   
-  .sub-container .login-form {
+  .form .login-form {
     width: 280px;
     height: 100%;
     text-align: center;
@@ -85,7 +85,7 @@
     position: relative;
   }
   
-  .sub-container .login-form .title {
+  .form id .register-form {
     color: #6e8d30;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -132,23 +132,15 @@
     align-items: center;
     border-top: 2px solid rgba(255,255,255,.25);
 }
-
-.deezer {
-  display: block;
-  align-items: flex-start
-  margin: 0px;
-}
-
 .logos {
     width: 43px;
 }
-
 .nuestrosnombres {
-    display: block;
     color: white;
     font-size: 13px;
-    font-family: 'Electrolize', sans-serif;
 }
+
+
   
   @media screen and (max-width: 500px) {
     .sub-container {

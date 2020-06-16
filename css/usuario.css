@@ -76,6 +76,10 @@
     width: 100%;
     height: 100%;
   }
+
+  .desktop {display: block;}
+
+  .mobile {display: none;}
   
   .form .login-form {
     width: 280px;
@@ -148,6 +152,11 @@
       height: auto;
       margin-top: 50px;
     }
+
+    .desktop {display: none;}
+
+    .mobile {display: block;}
+
     .sub-container .banner-img {
       width: 100%;
       height: 220px;
@@ -172,4 +181,8 @@
       padding: 10px;
     }
   }
+
+ /* @media all and (max-width: 499px) {
+  .desktop {display: none;}
+  .mobile {display: none;}*/
 

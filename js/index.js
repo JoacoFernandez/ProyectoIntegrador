@@ -38,7 +38,7 @@ fetch(url)
         let listacanciones = document.querySelector(".canciones");
         let resultados = datos.tracks.data;
         for(let i=0; i<5; i++){
-            listacanciones.innerHTML += "<li class='item'><a href='detalle.html?type=" + resultados[i].type + "&id=" + resultados[i].id + "'>" + resultados[i].title + "</a></li>";
+            listacanciones.innerHTML += "<li class='item'><a href='detalle.html?type=" + resultados[i].type + "&id=" + resultados[i].id + "'>" + resultados[i].title + "<img src='" + resultados[i].cover_small +  "' class='foto' alt=''>" + "</a></li>";
         }     
     })
     .catch(function(error){
@@ -54,7 +54,7 @@ fetch(url)
         let listaalbums = document.querySelector(".albums");
         let resultados = datos.albums.data;
         for(let i=0; i<5; i++){
-            listaalbums.innerHTML += "<li class='item'><a href='detalle.html?type=" + resultados[i].type + "&id=" + resultados[i].id + "'>" + resultados[i].title + "</a></li>";
+            listaalbums.innerHTML += "<li class='item'><a href='detalle.html?type=" + resultados[i].type + "&id=" + resultados[i].id + "'>" + resultados[i].title  + "<img src='" + resultados[i].cover_small +  "' class='foto' alt=''>" + "</a></li>";
         }     
     })
     .catch(function(error){

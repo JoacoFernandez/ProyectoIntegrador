@@ -259,6 +259,9 @@ object-fit: cover;
 .artistas{
     list-style-type: none;
     padding: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    float: left;
 }
 .item{
     border-bottom: 2px solid rgba(255,255,255,.25);

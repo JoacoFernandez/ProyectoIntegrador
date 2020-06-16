@@ -127,18 +127,22 @@
   }
 
   #userName {
-    text-transform: uppercase;
+    text-align: center;
     margin: 5px;
   }
 
   #userPw {
-    text-transform: uppercase;
+    text-align: center;
     margin: 5px;
   }
 
   .loginbutton {
     text-transform: uppercase;
     margin: 5px;
+  }
+
+  #login_btn {
+    text-transform: uppercase;
   }
   
   .btn {

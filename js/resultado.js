@@ -48,7 +48,7 @@ fetch(url)
     let resultados = datos.data;
 
     resultados.forEach(function(resultado) {
-      lista.innerHTML += '<li>' + resultado.title + '</li>';
+      lista.innerHTML += '<li><a href="detalle.html?type=' + resultado.type + '&id=' + resultado.id + '">' + resultado.title + '</a></li>';
     });
     console.log(datos)
   })
@@ -69,7 +69,7 @@ fetch(url)
     let resultados = datos.data;
 
     resultados.forEach(function(resultado) {
-      lista.innerHTML += '<li>' + resultado.name + '</li>';
+      lista.innerHTML += '<li><a href="detalle.html?type=' + resultado.type + '&id=' + resultado.id + '">' + resultado.name + '</a></li>';
     });
     console.log(datos)
   })
@@ -90,7 +90,7 @@ fetch(url)
     let resultados = datos.data;
 
     resultados.forEach(function(resultado) {
-      lista.innerHTML += '<li>' + resultado.title + '</li>';
+      lista.innerHTML += '<li><a href="detalle.html?type=' + resultado.type + '&id=' + resultado.id + '">' + resultado.title + '</li>';
     });
     console.log(datos)
   })

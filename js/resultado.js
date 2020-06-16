@@ -24,43 +24,88 @@ document.onreadystatechange = function() {
 let queryString = location.search;
 console.log(queryString);
 
-let searchParams = new URLSearchParams(queryString);
-console.log(searchParams);
+let queryStringObj = new URLSearchParams(queryString);
+console.log (queryString)
+console.log(queryStringObj);
 
 let imagen = document.querySelector(".imagen");
 let x = window.matchMedia("(max-width: 768px)");    
 
-let search = searchParams.get('search');
+let search = queryStringObj.get('search');
 console.log(search);
 
 let proxy = "https://cors-anywhere.herokuapp.com/";
-let url = proxy + 'https://api.deezer.com/search/?q=' + search;
+let url = proxy + 'https://api.deezer.com/search/track?q=' + search;
 console.log(url);
 
-
 fetch(url)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(datos){
-        console.log(datos);
-        let lista = document.querySelector('.resultados');
-        let resultados = datos.data;
-        console.log(resultados);
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(datos){
+    console.log(datos);
+    let lista = document.querySelector('.resultadoscanciones');
+    let resultados = datos.data;
 
-        resultados.forEach(function(resultado) {
-            lista.innerHTML += '<li>' + resultado.title + '</li>' + resultado.cover + '<li>' + resultado.artist;
-            
-        })
+    resultados.forEach(function(resultado) {
+      lista.innerHTML += '<li>' + resultado.title + '</li>';
+    });
+    console.log(datos)
+  })
 
- .catch(function(error){
-  console.log(error);
+  .catch(function(error) {
+    return console.log(error);
+  })
+
+  urlArtist = proxy + 'https://api.deezer.com/search/artist?q=' + search;
+
+  fetch(urlArtist)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(datos){
+    console.log(datos);
+    let lista = document.querySelector('.resultadosartists');
+    let resultados = datos.data;
+
+    resultados.forEach(function(resultado) {
+      lista.innerHTML += '<li>' + resultado.name + '</li>';
+    });
+    console.log(datos)
+  })
+
+  .catch(function(error) {
+    return console.log(error);
+  })
+
+ urlAlbum = proxy + 'https://api.deezer.com/search/album?q=' + search;
+
+  fetch(urlAlbum)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(datos){
+    console.log(datos);
+    let lista = document.querySelector('.resultadosalbums');
+    let resultados = datos.data;
+
+    resultados.forEach(function(resultado) {
+      lista.innerHTML += '<li>' + resultado.title + '</li>';
+    });
+    console.log(datos)
+  })
+
+  .catch(function(error) {
+    return console.log(error);
+  })
+
+
 
 // let lista = document.querySelector('.resultados');
 // let body = document.querySelector('section');
 // while(lista == ""){
 //     body.innerHTML += '<h1> Esperando </h1>';
-// }
+// }//
 
 
 //boton para subir arriba
@@ -80,4 +125,4 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
- }
+}

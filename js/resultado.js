@@ -28,7 +28,7 @@ let searchParams = new URLSearchParams(queryString);
 console.log(searchParams);
 
 let imagen = document.querySelector(".imagen");
-let x = window.matchMedia("(max-width: 768px)");    ////
+let x = window.matchMedia("(max-width: 768px)");    
 
 let search = searchParams.get('search');
 console.log(search);
@@ -48,17 +48,13 @@ fetch(url)
         let resultados = datos.data;
         console.log(resultados);
 
-        resultados.forEach(function(resultado){
-            lista.innerHTML += '<li>' + resultado.title + '</li>' + resultado.cover;
+        resultados.forEach(function(resultado) {
+            lista.innerHTML += '<li>' + resultado.title + '</li>' + resultado.cover + '<li>' + resultado.artist;
+            
         })
 
-      
-                })
-
-    .catch(function(error){
-        console.log(error);
-    })
-
+ .catch(function(error){
+  console.log(error);
 
 // let lista = document.querySelector('.resultados');
 // let body = document.querySelector('section');
@@ -84,4 +80,4 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+ }

@@ -77,6 +77,9 @@ body {
     width: 100%
 }
 .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     margin-top: 1px;
     margin-bottom: 1px;
 }
@@ -110,12 +113,30 @@ h1{
     to {transform: rotate(360deg)}
 }
 
+h2 {
+    font-family:'Electrolize', sans-serif;
+    text-transform: uppercase;
+    background-color: #a1dfcf;
+}
 
 .resultadoscanciones {
     color: white;
     text-decoration: none;
     list-style-type: none;
 }
+
+.resultadosartists {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.resultadosalbums {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
 .footer {
     display: grid;
     grid-template-rows: 1fr 1fr;

@@ -138,6 +138,9 @@ h2 {
     list-style-type: none;
 }
 
+li {
+    color: #a1dfcf;
+}
 .footer {
     display: grid;
     grid-template-rows: 1fr 1fr;

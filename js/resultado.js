@@ -9,6 +9,10 @@ function myFunction() {
   }
 }
 
+function hideloader(){
+  document.getElementById("loader").style.display = "none";
+}
+
 let queryString = location.search;
 console.log(queryString);
 

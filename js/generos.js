@@ -29,6 +29,17 @@ fetch(url)
         console.log(error);
 })
 
+/*para el spinner no tocar*/
+document.onreadystatechange = function() { 
+  if (document.readyState !== "complete") { 
+      document.querySelector("body").style.visibility = "hidden"; 
+      document.querySelector(".loader").style.visibility = "visible"; 
+  } else { 
+      document.querySelector(".loader").style.display = "none"; 
+      document.querySelector("body").style.visibility = "visible"; 
+  } 
+}; 
+
 //boton para subir arriba
 mybutton = document.getElementById("myBtn");
 

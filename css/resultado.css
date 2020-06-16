@@ -101,13 +101,19 @@ h1{
 }
 
 .loader .hidden {
-    animation: fade
-
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes round{
     from{transform: rotate(0deg)}
     to {transform: rotate(360deg)}
+}
+
+
+#myDiv {
+    display: none;
+    text-align: center;
 }
 
 

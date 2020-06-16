@@ -9,9 +9,26 @@ function myFunction() {
   }
 }
 
-function hideloader(){
-  document.getElementById("loader").style.display = "none";
+document.onreadystatechange = function() { 
+  if (document.readyState !== "complete") { 
+      document.querySelector("body").style.visibility = "hidden"; 
+      document.querySelector(".loader").style.visibility = "visible"; 
+  } else { 
+      document.querySelector(".loader").style.display = "none"; 
+      document.querySelector("body").style.visibility = "visible"; 
+  } 
+}; 
+
+/*var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
 }
+
+function showPage() {
+  document.getElementsByClassName("loader").style.display = "none";
+  document.getElementsByClassName("resultaods").style.display = "block";
+}*/
 
 let queryString = location.search;
 console.log(queryString);
@@ -50,6 +67,7 @@ fetch(url)
     .catch(function(error){
         console.log(error);
     })
+
 
 // let lista = document.querySelector('.resultados');
 // let body = document.querySelector('section');

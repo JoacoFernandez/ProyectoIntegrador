@@ -88,7 +88,7 @@
   font-size: 28px;
   font-weight: bold;
   font-family:'Electrolize', sans-serif;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   margin-top: 25px;
   background-color: white;
 }
@@ -98,10 +98,6 @@
     height: 100%;
     text-align: left;
     margin-left: 15px;
-  }
-  
-  .getaccount {
-    text-transform: uppercase;
   }
 
   #rgstr_btn {
@@ -117,16 +113,33 @@
 
   #name {
     text-align: center;
+    margin: 5px;
   }
 
   #pw {
     text-align: center;
+    margin: 5px;
   }
-  
-  #name {
-    text-align: center;
+
+  .getaccount {
+    text-transform: uppercase;
+    margin: 5px;
   }
-  
+
+  #userName {
+    text-transform: uppercase;
+    margin: 5px;
+  }
+
+  #userPw {
+    text-transform: uppercase;
+    margin: 5px;
+  }
+
+  .loginbutton {
+    text-transform: uppercase;
+    margin: 5px;
+  }
   
   .btn {
     position: absolute;

@@ -20,16 +20,6 @@ document.onreadystatechange = function() {
   } 
 }; 
 
-/*var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementsByClassName("loader").style.display = "none";
-  document.getElementsByClassName("resultaods").style.display = "block";
-}*/
 
 let queryString = location.search;
 console.log(queryString);

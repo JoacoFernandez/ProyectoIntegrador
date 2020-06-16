@@ -80,40 +80,53 @@
   .desktop {display: block;}
 
   .mobile {display: none;}
-  
-  .form .login-form {
+
+.title {
+  color: #a1dfcf;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 28px;
+  font-weight: bold;
+  font-family:'Electrolize', sans-serif;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  background-color: white;
+}
+
+  .form {
     width: 280px;
     height: 100%;
-    text-align: center;
-    padding: 40px 35px 0;
-    position: relative;
+    text-align: left;
+    margin-left: 15px;
   }
   
-  .register-form {
-    color: #6e8d30;
+  .getaccount {
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 28px;
-    margin-bottom: 25px;
-    font-weight: bold;
+  }
+
+  #rgstr_btn {
+    text-transform: uppercase;
   }
   
-  .login-form .label {
-    color: #524a4a;
+  #register-form {
+    color: white;
     font-size: 14px;
     letter-spacing: 2px;
+    text-align: left;
+  }
+
+  #name {
+    text-align: center;
+  }
+
+  #pw {
+    text-align: center;
   }
   
-  .login-form .input {
-    margin: 5px 0 15px;
-    width: 100%;
-    padding: 8px;
+  #name {
+    text-align: center;
   }
   
-  .login-form .forgot a {
-    color: #6e8d30;
-    font-size: 18px;
-  }
   
   .btn {
     position: absolute;

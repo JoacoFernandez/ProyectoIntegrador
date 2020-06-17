@@ -51,7 +51,7 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
                 boton.addEventListener('click', function(e){
                   e.preventDefault();
 
-                  let indiceArray = playlist.indexOf(idtrack);
+                  let indiceArray = playlist.indexOf(track.id);
                     playlist.splice(indiceArray, 1);
                     let playlistParaStorage = JSON.stringify(playlist);
                     boton.innerHTML = "Agregar";

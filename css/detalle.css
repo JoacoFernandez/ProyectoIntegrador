@@ -83,6 +83,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+.foto{
+
+    border-radius: 10%;
+}
 .informacion{
     color: #fcfcfc;
     display: grid;

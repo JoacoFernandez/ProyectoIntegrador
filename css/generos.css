@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #110c11;
     margin: 0px;
     font-family:'Electrolize', sans-serif;
 }
@@ -7,7 +7,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     border-bottom: 2px solid rgba(255,255,255,.25);
-    background-color: black;
+    background-color: #110c11;
     z-index: 999;
 }
 
@@ -23,7 +23,7 @@ h1 {
 
 .logo a {
     text-decoration: none;
-    color: white;
+    color: #faebd7;
     font-size: 50px;
 }
 
@@ -36,7 +36,7 @@ h1 {
 
 .nav a {
     text-decoration: none;
-    color: white;
+    color: #faebd7;
     font-size: 15px;
 }
 
@@ -84,7 +84,7 @@ h1 {
     margin-bottom: 1px;
 }
 .frase {
-    color: white;
+    color: #faebd7;
     text-align: center;
     font-size: 12px;
     background-color: rgb(255,255,255, 0.2);
@@ -134,7 +134,7 @@ h1 {
 }
 .cadagenero a{
     text-decoration: none;
-    color: white;
+    color: #faebd7;
 }
 .cadagenero a:hover{
     color: grey;
@@ -150,7 +150,7 @@ h1 {
     width: 43px;
 }
 .nuestrosnombres {
-    color: white;
+    color: #faebd7;
     font-size: 13px;
 }
 

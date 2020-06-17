@@ -8,7 +8,7 @@
   }*/
   
   body {
-    background: black;
+    background: #110c11;
     margin: 0px;
     font-family:'Electrolize', sans-serif;
   }
@@ -17,7 +17,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     border-bottom: 2px solid rgba(255,255,255,.25);
-    background-color: black;
+    background-color: #110c11;
     z-index: 999;
 }
   
@@ -29,7 +29,7 @@
 
 .logo a {
     text-decoration: none;
-    color: white;
+    color: #faebd7;
     font-size: 50px;
 }
 
@@ -43,7 +43,7 @@
 
 .nav a {
     text-decoration: none;
-    color: white;
+    color: #faebd7;
     font-size: 25px;
     font-family: 'Electrolize', sans-serif;
 }
@@ -90,7 +90,7 @@
   font-family:'Electrolize', sans-serif;
   margin-bottom: 15px;
   margin-top: 25px;
-  background-color: white;
+  background-color: #faebd7;
 }
 
   .form {
@@ -105,7 +105,7 @@
   }
   
   #register-form {
-    color: white;
+    color: #faebd7;
     font-size: 14px;
     letter-spacing: 2px;
     text-align: left;
@@ -170,7 +170,7 @@
     width: 43px;
 }
 .nuestrosnombres {
-    color: white;
+    color: #faebd7;
     font-size: 13px;
 }
 

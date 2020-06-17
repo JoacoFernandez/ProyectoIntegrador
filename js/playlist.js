@@ -35,17 +35,6 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
                 console.log(track);
                 playlistWrapper.innerHTML += "<li class='cadatrack'><a href='#' class='boton'>borrar</a><a href='detalle.html?type=" + track.type + "&id=" + track.id + "' class='links'>" + track.title + "</a><br><a href='detalle.html?type=" + track.artist.type + "&id=" + track.artist.id + "' class='linksartist'>" + track.artist.name + "</a>";
                 let boton = document.querySelector('.boton');
-                
-                boton.addEventListener('click', function(e){
-                  e.preventDefault();
-                  let indiceArray = playlist.indexOf(id);
-                    playlist.splice(indiceArray, 1);
-                    let playlistParaStorage = JSON.stringify(playlist);
-                    boton.innerHTML = "Agregar";
-                    console.log(playlist);
-                    localStorage.setItem('playlist', playlistParaStorage);
-                    console.log(localStorage);
-                })
 
                 let x = window.matchMedia("(width: 768px)");
                 let y = window.matchMedia("(width: 1024px)");
@@ -59,6 +48,18 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
                 } else {
                     playlistWrapper.innerHTML += "<iframe class='player' scrolling='no' frameborder='0' allowTransparency='true' src='https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=200&height=200&color=007FEB&layout=dark&size=medium&type=tracks&id=" + idtrack + "'&app_id=1' width='200' height='200'></iframe>";
                 }
+
+                boton.addEventListener('click', function(e){
+                  e.preventDefault();
+
+                  let indiceArray = playlist.indexOf(playlist);
+                    playlist.splice(indiceArray, 1);
+                    let playlistParaStorage = JSON.stringify(playlist);
+                    boton.innerHTML = "Agregar";
+                    console.log(playlist);
+                    localStorage.setItem('playlist', playlistParaStorage);
+                    console.log(localStorage);
+                })
                 
             })
             .catch(function(error){

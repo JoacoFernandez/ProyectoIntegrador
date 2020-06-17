@@ -1,5 +1,10 @@
-var userName = document.getElementById('userName').addEventListener('submit', store());
-var userPw = document.getElementById('userPw').addEventListener('submit', check());
+var userName = document.getElementById('rgstr_btn').addEventListener('submit', function(e){
+    const usuario = document.getElementById('usuario').value;
+    localStorage.setItem('usuario', usuario);
+    alert('Cuenta Registrada')
+    e.preventDefault()
+});
+//var userPw = document.getElementById('login_btn').addEventListener('submit', check());
 
 // storing input from register-form
 function store() {

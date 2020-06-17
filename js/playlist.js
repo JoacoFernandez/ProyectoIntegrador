@@ -35,7 +35,7 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
                 console.log(track);
                 playlistWrapper.innerHTML += "<li class='cadatrack'><a href='#' class='boton'>borrar</a><a href='detalle.html?type=" + track.type + "&id=" + track.id + "' class='links'>" + track.title + "</a><br><a href='detalle.html?type=" + track.artist.type + "&id=" + track.artist.id + "' class='linksartist'>" + track.artist.name + "</a>";
 <<<<<<< HEAD
-                let boton = document.querySelector('.boton');
+                
 =======
                 
               
@@ -54,11 +54,11 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
                 } else {
                     playlistWrapper.innerHTML += "<iframe class='player' scrolling='no' frameborder='0' allowTransparency='true' src='https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=200&height=200&color=007FEB&layout=dark&size=medium&type=tracks&id=" + idtrack + "'&app_id=1' width='200' height='200'></iframe>";
                 }
-
+                let boton = document.querySelector('.boton');
                 boton.addEventListener('click', function(e){
                   e.preventDefault();
 
-                  let indiceArray = playlist.indexOf(playlist);
+                  let indiceArray = playlist.indexOf(idtrack);
                     playlist.splice(indiceArray, 1);
                     let playlistParaStorage = JSON.stringify(playlist);
                     boton.innerHTML = "Agregar";

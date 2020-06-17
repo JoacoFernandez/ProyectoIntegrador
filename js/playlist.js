@@ -33,18 +33,9 @@ if(recuperoStorage == null || recuperoStorage.length == 1){
             .then(function(track){
                 console.log(track);
                 playlistWrapper.innerHTML += "<li class='cadatrack'><a href='#' class='boton'>borrar</a><a href='detalle.html?type=" + track.type + "&id=" + track.id + "' class='links'>" + track.title + "</a><br><a href='detalle.html?type=" + track.artist.type + "&id=" + track.artist.id + "' class='linksartist'>" + track.artist.name + "</a>";
-                let boton = document.querySelector('.boton');
                 
-                boton.addEventListener('click', function(e){
-                  e.preventDefault();
-                  let indiceArray = playlist.indexOf(id);
-                    playlist.splice(indiceArray, 1);
-                    let playlistParaStorage = JSON.stringify(playlist);
-                    boton.innerHTML = "Agregar";
-                    console.log(playlist);
-                    localStorage.setItem('playlist', playlistParaStorage);
-                    console.log(localStorage);
-                })
+              
+
 
                 let x = window.matchMedia("(width: 768px)");
                 let y = window.matchMedia("(width: 1024px)");

@@ -34,14 +34,7 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
             .then(function(track){
                 console.log(track);
                 playlistWrapper.innerHTML += "<li class='cadatrack'><a href='#' class='boton'>borrar</a><a href='detalle.html?type=" + track.type + "&id=" + track.id + "' class='links'>" + track.title + "</a><br><a href='detalle.html?type=" + track.artist.type + "&id=" + track.artist.id + "' class='linksartist'>" + track.artist.name + "</a>";
-<<<<<<< HEAD
                 
-=======
-                
-              
-
->>>>>>> f616f69da4dc75a54c78b2e6c6edd15708a51a67
-
                 let x = window.matchMedia("(width: 768px)");
                 let y = window.matchMedia("(width: 1024px)");
                 let z = window.matchMedia("(min-width: 1440px)");

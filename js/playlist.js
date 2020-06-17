@@ -15,8 +15,9 @@ let playlistWrapper = document.querySelector('.playlistwrapper');
 let player = document.querySelector('iframe');
 let section = document.querySelector('.section');
 
-if(recuperoStorage == null || recuperoStorage.length == 1){
+if(recuperoStorage == null || recuperoStorage == "[]"){
     section.innerHTML += "<h2 class='vacio' > No hay canciones en tu playlist</h2>";
+    let alerta = alert('En este momento tu playlist esta vacia');
 } else {
     playlist.forEach(function(idtrack){
         mostrarTrack(idtrack);

@@ -138,7 +138,9 @@ fetch(url)
                     let playlistParaStorage = JSON.stringify(playlist);
                     localStorage.setItem('playlist', playlistParaStorage);
                     console.log(localStorage);
+
                 })
+
             break;
 
             case ('genre'):

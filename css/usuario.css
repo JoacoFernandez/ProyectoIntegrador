@@ -8,11 +8,10 @@
   }*/
   
   body {
-    background: #110c11;
+    background-color:#110c11;
     margin: 0px;
     font-family:'Electrolize', sans-serif;
-  }
-
+}
 .header {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -20,7 +19,7 @@
     background-color: #110c11;
     z-index: 999;
 }
-  
+
 .logo {
     display: grid;
     justify-content: center;
@@ -32,29 +31,40 @@
     color: #fcfcfc;
     font-size: 50px;
 }
-
 .nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    font-family:'Electrolize', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav a {
-    text-decoration: none;
-    color: #fcfcfc;
-    font-size: 25px;
-    font-family: 'Electrolize', sans-serif;
+  text-decoration: none;
+  color: #fcfcfc;
+  font-size: 15px;
 }
 
 .nav a:hover {
-    color: grey;
+  color: grey;
 }
 
-  .container {
-    padding: 0 20px;
-  }
+.nav input[type=text] {
+  width: 90%;
+  color: darkcyan;
+  padding: 5px;
+  font-family:'Electrolize', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.container {
+  padding: 0 20px;
+}
   
   .sub-container {
     max-width: 500px;
@@ -216,3 +226,49 @@
   .desktop {display: none;}
   .mobile {display: none;}*/
 
+  @media screen and (min-width: 768px) {
+    .header {
+        grid-template-columns:  2fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .logo {
+        float: left;
+        justify-content: left;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .logo a{
+        font-size: 25px;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav a{
+        font-size: 17px;
+    }
+    .footer {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+  }
+  .nuestrosnombres {
+      font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav a{
+      font-size: 20px;
+  }
+  .logo a{
+      font-size: 30px;
+  }
+  .section{
+      margin: 105px;
+  }
+  .nuestrosnombres {
+      font-size: 14px;
+  }
+}

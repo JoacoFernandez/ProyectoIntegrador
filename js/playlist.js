@@ -15,8 +15,9 @@ let playlistWrapper = document.querySelector('.playlistwrapper');
 let player = document.querySelector('iframe');
 let section = document.querySelector('.section');
 
-if(recuperoStorage == null || recuperoStorage.length == 1){
+if(recuperoStorage == null || recuperoStorage == "[]"){
     section.innerHTML += "<h2 class='vacio' > No hay canciones en tu playlist</h2>";
+    let alerta = alert('En este momento tu playlist esta vacia');
 } else {
     playlist.forEach(function(idtrack){
         mostrarTrack(idtrack);
@@ -33,19 +34,7 @@ if(recuperoStorage == null || recuperoStorage.length == 1){
             .then(function(track){
                 console.log(track);
                 playlistWrapper.innerHTML += "<li class='cadatrack'><a href='#' class='boton'>borrar</a><a href='detalle.html?type=" + track.type + "&id=" + track.id + "' class='links'>" + track.title + "</a><br><a href='detalle.html?type=" + track.artist.type + "&id=" + track.artist.id + "' class='linksartist'>" + track.artist.name + "</a>";
-                let boton = document.querySelector('.boton');
                 
-                boton.addEventListener('click', function(e){
-                  e.preventDefault();
-                  let indiceArray = playlist.indexOf(id);
-                    playlist.splice(indiceArray, 1);
-                    let playlistParaStorage = JSON.stringify(playlist);
-                    boton.innerHTML = "Agregar";
-                    console.log(playlist);
-                    localStorage.setItem('playlist', playlistParaStorage);
-                    console.log(localStorage);
-                })
-
                 let x = window.matchMedia("(width: 768px)");
                 let y = window.matchMedia("(width: 1024px)");
                 let z = window.matchMedia("(min-width: 1440px)");
@@ -58,6 +47,18 @@ if(recuperoStorage == null || recuperoStorage.length == 1){
                 } else {
                     playlistWrapper.innerHTML += "<iframe class='player' scrolling='no' frameborder='0' allowTransparency='true' src='https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=200&height=200&color=007FEB&layout=dark&size=medium&type=tracks&id=" + idtrack + "'&app_id=1' width='200' height='200'></iframe>";
                 }
+                let boton = document.querySelector('.boton');
+                boton.addEventListener('click', function(e){
+                  e.preventDefault();
+
+                  let indiceArray = playlist.indexOf(track.id);
+                    playlist.splice(indiceArray, 1);
+                    let playlistParaStorage = JSON.stringify(playlist);
+                    boton.innerHTML = "Agregar";
+                    console.log(playlist);
+                    localStorage.setItem('playlist', playlistParaStorage);
+                    console.log(localStorage);
+                })
                 
             })
             .catch(function(error){

@@ -19,7 +19,7 @@ body {
 
 .logo a {
     text-decoration: none;
-    color: #faebd7;
+    color: #fcfcfc;
     font-size: 50px;
 }
 
@@ -32,7 +32,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: w#faebd7;
+    color: #fcfcfc;
     font-size: 15px;
 }
 
@@ -84,7 +84,7 @@ body {
     margin-bottom: 1px;
 }
 h1{
-    color: #faebd7;
+    color: #fcfcfc;
 }
 
 .loader {
@@ -121,19 +121,19 @@ h2 {
 }
 
 .resultadoscanciones {
-    color: white;
+    color: #fcfcfc;
     text-decoration: none;
     list-style-type: none;
 }
 
 .resultadosartists {
-    color: #faebd7;
+    color: #fcfcfc;
     text-decoration: none;
     list-style-type: none;
 }
 
 .resultadosalbums {
-    color: w#faebd7;
+    color: #fcfcfc;
     text-decoration: none;
     list-style-type: none;
 }
@@ -152,7 +152,7 @@ li {
     width: 43px;
 }
 .nuestrosnombres {
-    color: w#faebd7;
+    color: #fcfcfc;
     font-size: 13px;
 }
 

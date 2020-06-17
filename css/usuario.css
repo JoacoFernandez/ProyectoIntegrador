@@ -29,7 +29,7 @@
 
 .logo a {
     text-decoration: none;
-    color: #faebd7;
+    color: #fcfcfc;
     font-size: 50px;
 }
 
@@ -43,7 +43,7 @@
 
 .nav a {
     text-decoration: none;
-    color: #faebd7;
+    color: #fcfcfc;
     font-size: 25px;
     font-family: 'Electrolize', sans-serif;
 }
@@ -90,7 +90,7 @@
   font-family:'Electrolize', sans-serif;
   margin-bottom: 15px;
   margin-top: 25px;
-  background-color: whitesmoke;
+  background-color: #fcfcfc;
 }
 
   .form {
@@ -105,7 +105,7 @@
   }
   
   #register-form {
-    color: #faebd7;
+    color: #fcfcfc;
     font-size: 14px;
     letter-spacing: 2px;
     text-align: left;
@@ -170,7 +170,7 @@
     width: 43px;
 }
 .nuestrosnombres {
-    color: #faebd7;
+    color: #fcfcfc;
     font-size: 13px;
 }
 

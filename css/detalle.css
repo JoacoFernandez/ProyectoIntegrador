@@ -19,7 +19,7 @@ body {
 
 .logo a {
     text-decoration: none;
-    color: #faebd7;
+    color: #fcfcfc;
     font-size: 50px;
 }
 
@@ -52,7 +52,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #faebd7;
+    color: #fcfcfc;
     font-size: 15px;
 }
 
@@ -84,14 +84,14 @@ body {
     align-items: center;
 }
 .informacion{
-    color: #faebd7;
+    color: #fcfcfc;
     display: grid;
     justify-content: center;
     align-items: center;
 }
 .links{
     text-decoration: none;
-    color: #faebd7;
+    color: #fcfcfc;
 }
 ul{
     list-style: none;
@@ -126,7 +126,7 @@ ul{
 .boton{
     text-decoration: none;
     color: black;
-    background-color: #faebd7;
+    background-color: #fcfcfc;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -142,7 +142,7 @@ ul{
     width: 43px;
 }
 .nuestrosnombres {
-    color: #faebd7;
+    color: #fcfcfc;
     font-size: 13px;
 }
 

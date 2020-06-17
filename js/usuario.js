@@ -1,5 +1,5 @@
-var userName = document.getElementById('userName').value;
-var userPw = document.getElementById('userPw').value;
+var userName = document.getElementById('userName').addEventListener('submit', store());
+var userPw = document.getElementById('userPw').addEventListener('submit', check());
 
 // storing input from register-form
 function store() {

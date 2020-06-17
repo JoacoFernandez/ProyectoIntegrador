@@ -25,12 +25,7 @@ let queryString = location.search;
 console.log(queryString);
 
 let queryStringObj = new URLSearchParams(queryString);
-console.log (queryString)
-console.log(queryStringObj);
-
-let imagen = document.querySelector(".imagen");
-let x = window.matchMedia("(max-width: 768px)");    
-
+console.log(queryStringObj);  
 let search = queryStringObj.get('search');
 console.log(search);
 
@@ -48,18 +43,18 @@ fetch(url)
     let resultados = datos.data;
 
     resultados.forEach(function(resultado) {
-      lista.innerHTML += '<li><a href="detalle.html?type=' + resultado.type + '&id=' + resultado.id + '">' + resultado.title + '</a></li>';
+      lista.innerHTML += '<li><a class="result" href="detalle.html?type=' + resultado.type + '&id=' + resultado.id + '">' + resultado.title + '</a></li>';
     });
     console.log(datos)
   })
 
   .catch(function(error) {
     return console.log(error);
-  })
+})
 
-  urlArtist = proxy + 'https://api.deezer.com/search/artist?q=' + search;
+let urlArtist = proxy + 'https://api.deezer.com/search/artist?q=' + search;
 
-  fetch(urlArtist)
+fetch(urlArtist)
   .then(function(response) {
     return response.json();
   })
@@ -69,18 +64,18 @@ fetch(url)
     let resultados = datos.data;
 
     resultados.forEach(function(resultado) {
-      lista.innerHTML += '<li><a href="detalle.html?type=' + resultado.type + '&id=' + resultado.id + '">' + resultado.name + '</a></li>';
+      lista.innerHTML += '<li><a class="result" href="detalle.html?type=' + resultado.type + '&id=' + resultado.id + '">' + resultado.name + '</a></li>';
     });
     console.log(datos)
   })
 
   .catch(function(error) {
     return console.log(error);
-  })
+})
 
- urlAlbum = proxy + 'https://api.deezer.com/search/album?q=' + search;
+let urlAlbum = proxy + 'https://api.deezer.com/search/album?q=' + search;
 
-  fetch(urlAlbum)
+fetch(urlAlbum)
   .then(function(response) {
     return response.json();
   })
@@ -90,22 +85,14 @@ fetch(url)
     let resultados = datos.data;
 
     resultados.forEach(function(resultado) {
-      lista.innerHTML += '<li><a href="detalle.html?type=' + resultado.type + '&id=' + resultado.id + '">' + resultado.title + '</li>';
+      lista.innerHTML += '<li><a class="result" href="detalle.html?type=' + resultado.type + '&id=' + resultado.id + '">' + resultado.title + '</li>';
     });
     console.log(datos)
   })
 
   .catch(function(error) {
     return console.log(error);
-  })
-
-
-
-// let lista = document.querySelector('.resultados');
-// let body = document.querySelector('section');
-// while(lista == ""){
-//     body.innerHTML += '<h1> Esperando </h1>';
-// }//
+})
 
 
 //boton para subir arriba

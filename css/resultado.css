@@ -78,8 +78,7 @@ body {
 }
 .section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     margin-top: 1px;
     margin-bottom: 1px;
 }
@@ -102,7 +101,6 @@ h1{
     margin: auto;
     animation: round 2s linear infinite;
 }
-
 .loader .hidden {
     animation: fadeOut 1s;
     animation-fill-mode: forwards;
@@ -119,27 +117,22 @@ h2 {
     background-color: #a1dfcf;
     margin-left: 10px;
 }
-
-.resultadoscanciones {
+.resultadosartists{
+    list-style-type: none;
+    padding-left: 10px;
+}
+.resultadosalbums{
+    list-style-type: none;
+    padding-left: 10px;
+}
+.resultadoscanciones{
+    list-style-type: none;
+    padding-left: 10px;
+}
+.result {
     color: #fcfcfc;
     text-decoration: none;
-    list-style-type: none;
-}
-
-.resultadosartists {
-    color: #fcfcfc;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.resultadosalbums {
-    color: #fcfcfc;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-li {
-    color: #a1dfcf;
+    padding-left: 0px;
 }
 .footer {
     display: grid;
@@ -199,6 +192,11 @@ li {
     .nav a{
         font-size: 17px;
     }
+    .section{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 50px;
+    }
     .footer {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
@@ -214,8 +212,9 @@ li {
     .logo a{
         font-size: 30px;
     }
-    .charts {
+    .section {
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
     }
     .nuestrosnombres {
         font-size: 14px;

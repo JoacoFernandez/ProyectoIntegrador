@@ -205,6 +205,13 @@ ul{
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
+
+    .logos {
+        width: 43px;
+        height: 42.45px;
+
+    }
+
     .nuestrosnombres {
         font-size: 13px;
     }

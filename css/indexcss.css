@@ -29,8 +29,8 @@ header {
 }
 
 .rimba {
-    height: 100%;
-    width: 100%;
+    height: 120px;
+    width: 400px;
 
 }
 .logo {
@@ -40,6 +40,7 @@ header {
 }
 
 .logo a {
+    height: 120px;
     text-decoration: none;
     color: #fcfcfc;
     font-size: 50px;
@@ -443,5 +444,11 @@ object-fit: fill;
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .rimba {
+        width: 100%;
+        height:100%;
+        object-fit: contain ;
     }
 }

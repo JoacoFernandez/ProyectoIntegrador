@@ -138,16 +138,24 @@ ul{
 .footer {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
     border-top: 2px solid rgba(255,255,255,.25);
+}
+.deezer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .logos {
     width: 43px;
+    height: 42.45px;
+    justify-content: center;
+    align-items: center;
 }
 .nuestrosnombres {
     color: #fcfcfc;
     font-size: 13px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 #myBtn {
@@ -203,15 +211,8 @@ ul{
     }
     .footer {
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
     }
-
-    .logos {
-        width: 43px;
-        height: 42.45px;
-
-    }
-
     .nuestrosnombres {
         font-size: 13px;
     }

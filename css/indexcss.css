@@ -414,6 +414,24 @@ object-fit: fill;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
+    .canciones{
+        width: 230px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .albums{
+        width: 230px;
+        margin: 0px;
+    }
+    .artistas{
+        width: 230px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .item a{
+        padding: 0px;
+        font-size: 17px;
+    }
     .nuestrosnombres {
         font-size: 14px;
     }    

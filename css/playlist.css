@@ -3,7 +3,7 @@ body {
     margin: 0px;
     font-family:'Electrolize', sans-serif;
 }
-.header {
+header {
     display: grid;
     grid-template-rows: 1fr 1fr;
     border-bottom: 2px solid rgba(255,255,255,.25);

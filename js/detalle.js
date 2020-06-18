@@ -1,5 +1,5 @@
 window.onscroll = function() {myFunction()};
-var header = document.querySelector('.header');
+var header = document.querySelector('header');
 var sticky = header.offsetTop;
 mybutton = document.getElementById("myBtn");
 function myFunction() {

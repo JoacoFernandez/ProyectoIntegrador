@@ -11,7 +11,7 @@ header {
     height: auto;
 }
 .saludo{
-    color: darkcyan;
+    color: #a1dfcf;
     display: grid;
     justify-content: center;
     align-items: center;

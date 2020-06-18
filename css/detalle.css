@@ -1,16 +1,38 @@
 body {
-    background-color:#110c11;
+    background-color: #110c11;
     margin: 0px;
     font-family:'Electrolize', sans-serif;
 }
-.header {
+header {
     display: grid;
-    grid-template-rows: 1fr 1fr;
     border-bottom: 2px solid rgba(255,255,255,.25);
     background-color: #110c11;
     z-index: 999;
+    height: auto;
+}
+.saludo{
+    color: #a1dfcf;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.primero{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+.botonsearch{
+    background-color: #a1dfcf;
+    border-radius: 30px;
+}
+.searchbtn{
+    height: 10px;
 }
 
+.rimba {
+    height: 100%;
+    width: 100%;
+
+}
 .logo {
     display: grid;
     justify-content: center;
@@ -23,26 +45,6 @@ body {
     font-size: 50px;
 }
 
-.searchbtn {
-    position: absolute;
-    top: 4px;
-    right: 2px;
-    background-color: #a1dfcf;
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.5s linear;
-}
-
-.searchbtn .fas { 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.5s linear;
-}
-
 .nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -52,15 +54,14 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #fcfcfc;
+    color:  #fcfcfc;
     font-size: 15px;
 }
 
 .nav a:hover {
     color: grey;
 }
-
-.nav input[type=text] {
+.searchbar input[type=text] {
     width: 90%;
     color: darkcyan;
     padding: 5px;
@@ -73,6 +74,19 @@ body {
     position: fixed;
     top: 0;
     width: 100%
+}
+.searchbar {
+    border-radius: 50px;
+    box-shadow: 0 0 15px 1px;
+    outline: none;
+    width: 80%;align-items: center;
+}
+.searchbar .input {
+    border-radius: 50px;
+    box-shadow: 0 0 15px 1px;
+    outline: none;
+    color: dodgerblue;
+    font-family:'Electrolize', sans-serif;
 }
 .grid-container{
     display: grid;
@@ -180,8 +194,15 @@ ul{
 
 @media screen and (min-width: 768px) {
     .header {
-        grid-template-columns:  2fr 1fr;
+        height: 50px;
+    }
+    .primero{
+        grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .logo {
         float: left;
@@ -194,7 +215,7 @@ ul{
     }
     .nav {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: center;
         align-items: center;
     }

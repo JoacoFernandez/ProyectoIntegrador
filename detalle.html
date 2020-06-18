@@ -12,21 +12,38 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
-            <a href="index.html">Rim-ba</a>
-        </div>
-        <div class="nav">
-            <div class="playbarra"><a href="playlist.html">Playlist</a></div>
-            <div class="detbarra"><a href="generos.html">Géneros</a></div>
-            <form action="resultado.html" method="GET">
-                <input type="text" name="search" placeholder=Buscar>
-            </form>
-            <div class="searchbtn">
-                <i class="fas fa-search"></i>
+    <header>
+        <nav>
+            <div class="primero">
+                <div class="logo">
+                    <a href="index.html"><img class="rimba" src="img/logorimbaf.png"></a>
+                </div>
+                <div class="saludo">
+                    <div class="usuario">Bienvenido--</div>
+                </div>
             </div>
-        </div>
-    </div>
+            <div class="nav">
+                <div class="playbarra" id="playlist"><a href="playlist.html">Playlist</a></div>
+                <div class="detbarra"><a href="generos.html">Géneros</a></div>
+                <div class="sesion" id="login"><a id="abrir" href="#">Login</a>
+                    <div class="entrar" style="display:none;">
+                        <form id="formulario" action="index.html" method="get">
+                            <input type="text" id="nombre" name="nombre" value="" placeholder="Nombre">
+                            <input type="email" name="email" value="" placeholder="E-mail...">
+                            <button type="submit" name="">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class= "searchbar">
+                    <form action="resultado.html" method="GET">
+                        <input type="text" name="search" placeholder=Buscar>
+                        <button class="botonsearch"><img class="searchbtn" src="img/search.webp" alt=""></button>
+                    </form>
+                </div>
+            </div>
+           
+        </nav>
+    </header>
 
     <div class="section">
         <div class="loader">

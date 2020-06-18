@@ -35,7 +35,7 @@ console.log(localStorage.getItem("nombre"));
       entrar.style.display="block";
     })
   } else {
-    loginA.innerHTML="Logout";
+    loginA.innerHTML="Logout"; 
     document.querySelector(".usuario").innerText += localStorage.getItem("nombre");
     document.querySelector("#login a").addEventListener("click",function(){
       localStorage.removeItem("nombre");
@@ -96,6 +96,9 @@ fetch(url)
         console.log(error);
 })
 
+
+//spinner
+
 document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
         document.querySelector("body").style.visibility = "hidden"; 
@@ -105,16 +108,4 @@ document.onreadystatechange = function() {
         document.querySelector("body").style.visibility = "visible"; 
     } 
   };
-
-//popup box
-
-function PopUp(hideOrshow) {
-  if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
-else document.getElementById('ac-wrapper').removeAttribute('style');
-}
-window.onload = function () {
- setTimeout(function () {
-      PopUp('show');
-  }, 1000);
-}
 

@@ -88,13 +88,13 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
                   e.preventDefault();
 
                   let indiceArray = playlist.indexOf(track.id);
-                    playlist.splice(indiceArray, 2);
+                    playlist.splice(indiceArray, 1);
                     let playlistParaStorage = JSON.stringify(playlist);
                     boton.innerHTML = "Agregar";
                     console.log(playlist);
                     localStorage.setItem('playlist', playlistParaStorage);
                     console.log(localStorage);
-                    location.reload()
+                    location.reload();
                 })
                 
             })

@@ -5,11 +5,16 @@ body {
 }
 header {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
     border-bottom: 2px solid rgba(255,255,255,.25);
     background-color: #110c11;
     z-index: 999;
-    height: 80px;
+    height: auto;
+}
+.saludo{
+    color: white;
+}
+.primero{
+    width: auto;
 }
 .botonsearch{
     background-color: #a1dfcf;
@@ -283,9 +288,11 @@ height: 100%;
 
 @media screen and (min-width: 768px) {
     .header {
-        grid-template-columns: auto;
-        grid-template-rows: 1fr;
         height: 50px;
+    }
+    .nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .logo {
         float: left;

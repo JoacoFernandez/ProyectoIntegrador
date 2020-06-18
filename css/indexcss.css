@@ -70,6 +70,9 @@ header {
     font-weight: bold;
     border-radius: 20px;
 }
+
+
+
 .sticky {
     position: fixed;
     top: 0;

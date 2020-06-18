@@ -106,14 +106,15 @@ document.onreadystatechange = function() {
     } 
   };
 
+//popup box
 
-
-  function PopUp(hideOrshow) {
-    if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
- else document.getElementById('ac-wrapper').removeAttribute('style');
+function PopUp(hideOrshow) {
+  if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
+else document.getElementById('ac-wrapper').removeAttribute('style');
 }
 window.onload = function () {
-   setTimeout(function () {
-        PopUp('show');
-    }, 1000);
+ setTimeout(function () {
+      PopUp('show');
+  }, 1000);
 }
+

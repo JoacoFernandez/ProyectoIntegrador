@@ -105,3 +105,15 @@ document.onreadystatechange = function() {
         document.querySelector("body").style.visibility = "visible"; 
     } 
   };
+
+
+
+  function PopUp(hideOrshow) {
+    if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
+ else document.getElementById('ac-wrapper').removeAttribute('style');
+}
+window.onload = function () {
+   setTimeout(function () {
+        PopUp('show');
+    }, 1000);
+}

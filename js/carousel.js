@@ -81,11 +81,8 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
-
-
 //cuando aprieto para la izq que se mueva, y vice versa
 //nav indicator//
-
 
 //si usas un class list sin punto, si usas query con punto//
 

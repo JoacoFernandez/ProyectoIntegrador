@@ -134,6 +134,18 @@ iframe{
     align-items: center;
 }
 
+
+.boton{
+    text-decoration: none;
+    color: black;
+    background-color: #fcfcfc;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+}
+    
+
 #myBtn {
     display: none; /*Hidden by default */
     position: fixed; /* Fixed/sticky position */

@@ -33,7 +33,7 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
             })
             .then(function(track){
                 console.log(track);
-                playlistWrapper.innerHTML += "<li class='cadatrack'><a href='#' class='boton'>borrar</a><a href='detalle.html?type=" + track.type + "&id=" + track.id + "' class='links'>" + track.title + "</a><br><a href='detalle.html?type=" + track.artist.type + "&id=" + track.artist.id + "' class='linksartist'>" + track.artist.name + "</a>";
+                playlistWrapper.innerHTML += "<li class='cadatrack'><a href='#' class='boton'>BORRAR</a><a href='detalle.html?type=" + track.type + "&id=" + track.id + "' class='links'>" + track.title + "</a><br><a href='detalle.html?type=" + track.artist.type + "&id=" + track.artist.id + "' class='linksartist'>" + track.artist.name + "</a>";
                 
                 let x = window.matchMedia("(width: 768px)");
                 let y = window.matchMedia("(width: 1024px)");

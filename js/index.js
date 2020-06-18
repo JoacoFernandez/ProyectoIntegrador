@@ -29,7 +29,7 @@ console.log(localStorage.getItem("nombre"));
     })
   } else {
     loginA.innerHTML="Logout";
-    document.querySelector(".usuario").innerText = localStorage.getItem("nombre");
+    document.querySelector(".usuario").innerText += localStorage.getItem("nombre");
     document.querySelector("#login a").addEventListener("click",function(){
       localStorage.removeItem("nombre");
       window.location.href="index.html";

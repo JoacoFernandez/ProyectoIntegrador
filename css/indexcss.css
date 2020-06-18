@@ -11,10 +11,14 @@ header {
     height: auto;
 }
 .saludo{
-    color: white;
+    color: darkcyan;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 .primero{
-    width: auto;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
 }
 .botonsearch{
     background-color: #a1dfcf;
@@ -289,6 +293,10 @@ height: 100%;
 @media screen and (min-width: 768px) {
     .header {
         height: 50px;
+    }
+    .primero{
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
     }
     nav{
         display: grid;

@@ -242,4 +242,10 @@ ul{
     .nuestrosnombres {
         font-size: 14px;
     }
+
+    .rimba {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }

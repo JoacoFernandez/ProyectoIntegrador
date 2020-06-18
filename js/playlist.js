@@ -69,7 +69,7 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
             })
             .then(function(track){
                 console.log(track);
-                playlistWrapper.innerHTML += "<li class='cadatrack'><a href='#' class='boton'>BORRAR</a><a href='detalle.html?type=" + track.type + "&id=" + track.id + "' class='links'>" + track.title + "</a><br><a href='detalle.html?type=" + track.artist.type + "&id=" + track.artist.id + "' class='linksartist'>" + track.artist.name + "</a>";
+                playlistWrapper.innerHTML += "<li class='cadatrack'><button href='#' class='borrar'>BORRAR</button><a href='detalle.html?type=" + track.type + "&id=" + track.id + "' class='links'>" + track.title + "</a><br><a href='detalle.html?type=" + track.artist.type + "&id=" + track.artist.id + "' class='linksartist'>" + track.artist.name + "</a>";
                 
                 let x = window.matchMedia("(width: 768px)");
                 let y = window.matchMedia("(width: 1024px)");
@@ -83,19 +83,31 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
                 } else {
                     playlistWrapper.innerHTML += "<iframe class='player' scrolling='no' frameborder='0' allowTransparency='true' src='https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=200&height=200&color=007FEB&layout=dark&size=medium&type=tracks&id=" + idtrack + "'&app_id=1' width='200' height='200'></iframe>";
                 }
-                let boton = document.querySelector('.boton');
-                boton.addEventListener('click', function(e){
-                  e.preventDefault();
 
-                  let indiceArray = playlist.indexOf(track.id);
-                    playlist.splice(indiceArray, 1);
-                    let playlistParaStorage = JSON.stringify(playlist);
-                    boton.innerHTML = "Agregar";
-                    console.log(playlist);
-                    localStorage.setItem('playlist', playlistParaStorage);
-                    console.log(localStorage);
-                    location.reload();
-                })
+
+                var botones = document.querySelectorAll("button.borrar")
+                for (var i = 0; i < botones.length; i++) {
+                  botones[i].onclick = function() {
+
+                    let indiceArray = playlist.indexOf(track.id);
+                    if (playlist.indexOf(track.id) == -1) {
+                      } else {
+                        let indiceArray = playlist.indexOf(track.id);
+                        playlist.splice(indiceArray,1)
+                      }
+
+
+                      playlist.splice(indiceArray, 1);
+                      let playlistParaStorage = JSON.stringify(playlist);
+                      location.reload();
+                      console.log(playlist);
+                      localStorage.setItem('playlist', playlistParaStorage);
+                      console.log(localStorage);
+
+                  }
+
+                }
+                
                 
             })
             .catch(function(error){

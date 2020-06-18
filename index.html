@@ -10,25 +10,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <a href="index.html">Rim-ba</a>
-        </div>
-        <div class="nav">
-            <div class="playbarra"><a href="playlist.html">Playlist</a></div>
-            <div class="detbarra"><a href="generos.html">Géneros</a></div>
-            <div class="login"><a href="usuario.html">LOG IN</a></div>
+    <header>
+        <nav>
+            <div class="primero">
+                <div class="logo">
+                    <a href="index.html">Rim-ba</a>
+                </div>
+                <div class="saludo">
+                    <div class="item-text">Bienvenido</div>
+                    <div class="item-text usuario">Usuario</div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="playbarra" id="playlist"><a href="playlist.html">Playlist</a></div>
+                <div class="detbarra"><a href="generos.html">Géneros</a></div>
+                <!-- <div class="nav-item display-none" id="logout"><a class="nav-link" href="">Logout</a> </div> -->
+                <div class="sesion" id="login"><a class="nav-link aLogin" href="#">Login</a>
+                    <div class="entrar" style="display:none;">
+                        <h3>Login</h3>
+                        <form id="formulario" action="index.html" method="get">
+                            <input type="text" id="nombre" name="nombre" value="" placeholder="Nombre">
+                            <input type="email" name="email" value="" placeholder="E-mail...">
+                            <button type="submit" name="">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
             <div class= "searchbar">
-            <form action="resultado.html" method="GET">
-                <input type="text" name="search" placeholder=Buscar>
-                <button class="botonsearch"><img class="searchbtn" src="img/search.webp" alt=""></button>
-            </form>
-            <!-- <div class="searchbtn">
-                <i class="fas fa-search"></i>
-            </div> -->
-        </div>
-        </div>
-    </div>
+                <form action="resultado.html" method="GET">
+                    <input type="text" name="search" placeholder=Buscar>
+                    <button class="botonsearch"><img class="searchbtn" src="img/search.webp" alt=""></button>
+                </form>
+            </div>
+           
+        </nav>
+    </header>
 
     <div class="section">
         <div class="carousel">

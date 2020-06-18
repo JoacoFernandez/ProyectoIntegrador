@@ -1,5 +1,5 @@
 window.onscroll = function() {myFunction()};
-var header = document.querySelector('.header');
+var header = document.querySelector('header');
 var sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
@@ -8,6 +8,34 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+
+var loginA = document.querySelector("#login a");
+var loginSolo = document.querySelector("#login");
+document.querySelector("#login form").addEventListener("submit",function(event){
+  var nombre = document.querySelector("#nombre").value;
+  localStorage.setItem("nombre", nombre);
+})
+console.log(localStorage.getItem("nombre"));
+
+  if (localStorage.getItem("nombre") == "" || localStorage.getItem("null")) {
+    localStorage.removeItem("nombre");
+  } if (localStorage.getItem("nombre") == null) {
+    document.querySelector(".saludo").style.display="none";
+    document.querySelector("#playlist").style.display="none";
+    let entrar = document.querySelector(".entrar");
+    document.querySelector("#login a").addEventListener("click",function(){
+      entrar.style.display="block";
+    })
+  } else {
+    loginA.innerHTML="Logout";
+    document.querySelector(".usuario").innerText = localStorage.getItem("nombre");
+    document.querySelector("#login a").addEventListener("click",function(){
+      localStorage.removeItem("nombre");
+      window.location.href="index.html";
+    })
+}
+
 
 let proxy = "https://cors-anywhere.herokuapp.com/";
 let url = proxy + "https://api.deezer.com/chart/";

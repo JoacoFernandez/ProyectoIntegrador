@@ -201,6 +201,12 @@ h2 {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
+
+    .logos {
+        height: 42.45px;
+        width:43px;
+    }
+
     .nuestrosnombres {
         font-size: 13px;
     }

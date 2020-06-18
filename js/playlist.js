@@ -58,6 +58,7 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
                     console.log(playlist);
                     localStorage.setItem('playlist', playlistParaStorage);
                     console.log(localStorage);
+                    location.reload()
                 })
                 
             })

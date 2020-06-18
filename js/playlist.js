@@ -16,6 +16,35 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+
+
+var loginA = document.querySelector("#login a");
+var loginSolo = document.querySelector("#login");
+document.querySelector("#login form").addEventListener("submit",function(event){
+  var nombre = document.querySelector("#nombre").value;
+  localStorage.setItem("nombre", nombre);
+})
+console.log(localStorage.getItem("nombre"));
+
+  if (localStorage.getItem("nombre") == "" || localStorage.getItem("null")) {
+    localStorage.removeItem("nombre");
+  } if (localStorage.getItem("nombre") == null) {
+    document.querySelector(".saludo").style.display="none";
+    document.querySelector("#playlist").style.display="none";
+    let entrar = document.querySelector(".entrar");
+    document.querySelector("#login a").addEventListener("click",function(){
+      entrar.style.display="block";
+    })
+  } else {
+    loginA.innerHTML="Logout";
+    document.querySelector(".usuario").innerText += localStorage.getItem("nombre");
+    document.querySelector("#login a").addEventListener("click",function(){
+      localStorage.removeItem("nombre");
+      window.location.href="index.html";
+    })
+}
+
+
 let recuperoStorage = localStorage.getItem("playlist");
 let playlist = JSON.parse(recuperoStorage);
 let playlistWrapper = document.querySelector('.playlistwrapper');

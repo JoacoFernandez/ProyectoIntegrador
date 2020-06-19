@@ -12,9 +12,20 @@ function myFunction() {
   }
 }
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; // para Safari
+  document.documentElement.scrollTop = 0; // para Chrome, Firefox, IE and Opera
 }
+
+/*para el spinner no tocar*/
+document.onreadystatechange = function() { 
+  if (document.readyState !== "complete") { 
+      document.querySelector("body").style.visibility = "hidden"; 
+      document.querySelector(".loader").style.visibility = "visible"; 
+  } else { 
+      document.querySelector(".loader").style.display = "none"; 
+      document.querySelector("body").style.visibility = "visible"; 
+  } 
+}; 
 
 
 
@@ -106,9 +117,7 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
 
                   }
 
-                }
-                
-                
+                }  
             })
             .catch(function(error){
                 console.log(error);

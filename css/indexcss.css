@@ -100,6 +100,7 @@ object-fit: fill;
 
 .textoimagenes {
     color: white;
+    background-color: lightgray;
     text-transform: uppercase;
     background-color: none;
     font-size: 17px;

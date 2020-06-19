@@ -81,7 +81,7 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
                 } else if(z.matches) {
                     playlistWrapper.innerHTML += '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=800&height=350&color=a1dfcf&layout=dark&size=medium&type=tracks&id=' + idtrack + '&app_id=1" width="800" height="90"></iframe>';
                 } else {
-                    playlistWrapper.innerHTML += "<iframe class='player' scrolling='no' frameborder='0' allowTransparency='true' src='https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=200&height=200&color=007FEB&layout=dark&size=medium&type=tracks&id=" + idtrack + "'&app_id=1' width='200' height='200'></iframe>";
+                    playlistWrapper.innerHTML += "<iframe class='player' scrolling='no' frameborder='0' allowTransparency='true' src='https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=200&height=200&color=007FEB&layout=dark&size=medium&type=tracks&id=" + idtrack + "&app_id=1' width='200' height='200'></iframe>";
                 }
 
 

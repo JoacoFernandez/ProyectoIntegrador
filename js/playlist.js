@@ -75,11 +75,11 @@ if(recuperoStorage == null || recuperoStorage == "[]"){
                 let y = window.matchMedia("(width: 1024px)");
                 let z = window.matchMedia("(min-width: 1440px)");
                 if(x.matches){
-                    playlistWrapper.innerHTML += "<iframe class='player' scrolling='no' frameborder='0' allowTransparency='true' src='https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='" + idtrack + "'&app_id=1' width='400' height='90'></iframe>";
+                    playlistWrapper.innerHTML += '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=400&height=95&color=a1dfcf&layout=dark&size=medium&type=tracks&id=' + idtrack + '&app_id=1" width="400" height="90"></iframe>';
                 } else if(y.matches) {
-                    playlistWrapper.innerHTML += "<iframe class='player' scrolling='no' frameborder='0' allowTransparency='true' src='https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='" + idtrack + "'&app_id=1' width='500' height='90'></iframe>";
+                    playlistWrapper.innerHTML += '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=500&height=350&color=a1dfcf&layout=dark&size=medium&type=tracks&id=' + idtrack + '&app_id=1" width="500" height="90"></iframe>';
                 } else if(z.matches) {
-                    playlistWrapper.innerHTML += "<iframe class='player' scrolling='no' frameborder='0' allowTransparency='true' src='https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='" + idtrack + "'&app_id=1' width='800' height='90'></iframe>";
+                    playlistWrapper.innerHTML += '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=800&height=350&color=a1dfcf&layout=dark&size=medium&type=tracks&id=' + idtrack + '&app_id=1" width="800" height="90"></iframe>';
                 } else {
                     playlistWrapper.innerHTML += "<iframe class='player' scrolling='no' frameborder='0' allowTransparency='true' src='https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=200&height=200&color=007FEB&layout=dark&size=medium&type=tracks&id=" + idtrack + "'&app_id=1' width='200' height='200'></iframe>";
                 }

@@ -79,7 +79,7 @@ header {
     color: dodgerblue;
     font-family:'Electrolize', sans-serif;
 }
-.section {
+section {
     margin-top: 1px;
     margin-bottom: 1px;
 }
@@ -89,8 +89,6 @@ header {
     font-size: 12px;
     background-color: rgb(255,255,255, 0.2);
 }
-
-
 .loader {
     width: 50px;
     height: 50px;
@@ -106,12 +104,10 @@ header {
     margin: auto;
     animation: round 2s linear infinite;
 }
-
 .loader .hidden {
     animation: fadeOut 1s;
     animation-fill-mode: forwards;
 }
-
 @keyframes round{
     from{transform: rotate(0deg)}
     to {transform: rotate(360deg)}
@@ -139,7 +135,7 @@ header {
 .cadagenero a:hover{
     color: grey;
 }
-.footer {
+footer {
     display: grid;
     grid-template-rows: 1fr 1fr;
     border-top: 2px solid rgba(255,255,255,.25);
@@ -183,9 +179,6 @@ header {
   }
 
 @media screen and (min-width: 768px) {
-    .header {
-        height: 50px;
-    }
     .primero{
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
@@ -220,7 +213,7 @@ header {
         font-size: 23px;
         padding: 0px;
     }
-    .footer {
+    footer {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 2fr;
     }

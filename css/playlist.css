@@ -147,7 +147,7 @@ iframe{
     justify-content: center;
     align-items: center;
 }
-.footer {
+footer {
     display: grid;
     grid-template-rows: 1fr 1fr;
     border-top: 2px solid rgba(255,255,255,.25);
@@ -169,8 +169,6 @@ iframe{
     justify-content: center;
     align-items: center;
 }
-
-
 .boton{
     text-decoration: none;
     color: black;
@@ -180,8 +178,6 @@ iframe{
     align-items: center;
     width: 70px;
 }
-    
-
 #myBtn {
     display: none; /*Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -203,9 +199,6 @@ iframe{
   }
 
 @media screen and (min-width: 768px) {
-    .header {
-        height: 50px;
-    }
     .primero{
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
@@ -242,7 +235,7 @@ iframe{
         gap: 15px;
         padding: 0px;
     }
-    .footer {
+    footer {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 2fr;
     }
@@ -270,7 +263,6 @@ iframe{
     .nuestrosnombres {
         font-size: 14px;
     }
-
     .rimba {
         width: 100%;
         height: 100%;

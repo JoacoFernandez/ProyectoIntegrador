@@ -284,7 +284,7 @@ object-fit: fill;
 .item a:hover{
     color: grey;
 }
-.footer {
+footer {
     display: grid;
     grid-template-rows: 1fr 1fr;
     border-top: 2px solid rgba(255,255,255,.25);
@@ -328,9 +328,6 @@ object-fit: fill;
   }
 
 @media screen and (min-width: 768px) {
-    .header {
-        height: 50px;
-    }
     .primero{
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
@@ -377,7 +374,7 @@ object-fit: fill;
         margin-left: 60px;
         margin-right: 60px;
     }
-    .footer {
+    footer {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 2fr;
     }
